@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="fullpage">
+			<center>
+			<div class="header">
+				<center>
+					<h1>COVID-19 Bot</h1>
+					<a href="https://campus.belgrano.ort.edu.ar/tic/ticlab" target="_blank">
+						<h2>Hecho por TIC LAB</h2></a>
+				</center>
+			</div>
+			<div class="chatContainer centered">
+				<div class="msgsContainer">
+					<ul id="messages">
+					</ul>
+				</div>
+				<input id="usrMessageInput" class="msgInput" name="msg" type="text" placeholder="Escribe tu mensaje" autocomplete="off">
+				<button onclick="send()" class="sendBtn"> Enviar </button>
+			</div>
+			</center>
+		</div>
+		<script type="text/javascript" src="/static/chatbot.js"></script>
+	</body>
+</html>

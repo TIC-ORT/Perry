@@ -1,0 +1,134 @@
+.fullPage{
+	position: absolute;
+ 	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.chatContainer{
+	padding-top: 20px;
+	position: absolute;
+	display: inline-block;
+	height: 450px;
+	width: 360px;
+	background-color: #F1F1F1;
+}
+textarea:focus, input:focus, .msgInput:focus{
+    outline: none;
+}
+.msgInput{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	position: absolute;
+	bottom:0;
+    left:0;
+	width: 70%;
+	height: 40px;
+	border-width: 3px;
+	border-style: solid;
+	border-bottom-color: #308EE9;
+	border-top-color: #308EE9;
+	border-right-color: #308EE9;
+	border-left-color: #308EE9;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	text-indent: 5%;
+	outline: none;
+}
+.sendBtn{
+	width: 30%;
+	height: 40px;
+	position: absolute;
+	bottom:0;
+    right:0;
+	border: 0px;
+	border-radius: 0px;
+	background-color: #308EE9;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+    color:white;
+}
+.sendBtn:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.centered{
+	position: absolute;
+ 	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+    color: grey;
+}
+h2{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+    color: #308EE9;
+}
+ul{
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+ul li::before {
+	content: "▮";
+	color: #308EE9;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+.botMessage{
+	float: left;
+	clear: both;
+	margin-top: 10px;
+}
+.usrMessage{
+	padding-right: 15%;
+	margin-top: 10px;
+	direction: rtl;
+	float: right;
+	clear: both;
+}
+.msgsContainer {
+  position: absolute;
+  overflow-y: scroll;
+  width: 100%;
+  height: 90%;
+}
+.poweredBy{
+	display: inline-block;
+	width: 360px;
+}
+.poweredByIcons{
+	width:50%;
+	fill: #308EE9;
+}
+
+.transition-enabled {
+  opacity: 0; }
+
+.transition-in {
+  -webkit-animation: fade-in ease-in;
+  animation: fade-in ease-in;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.transition-out {
+  opacity: 1;
+  -webkit-animation: fade-out ease-out;
+  animation: fade-out ease-out;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
