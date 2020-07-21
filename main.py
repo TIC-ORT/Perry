@@ -4,7 +4,7 @@ from assistant import *
 from threading import Thread
 import codecs
 import warnings
-#warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 from gevent.pywsgi import WSGIServer
 from Provincia import API_Provincia
 import json
@@ -12,6 +12,8 @@ from whatsapp import sendToNum
 from datetime import datetime
 from bs4 import BeautifulSoup
 import re
+import logging
+logging.basicConfig(filename='history.log',level=logging.DEBUG)
 
 date = datetime.today().strftime('%Y-%m-%d')
 
@@ -25,6 +27,11 @@ def keep_alive():
 
 app = Flask(__name__)
 
+werkzeugLog = logging.getLogger('werkzeug')
+werkzeugLog.disabled = True
+requestsLog = logging.getLogger("urllib3.connectionpool")
+requestsLog.disabled = True
+
 @app.route('/')
 def main():
 	file = codecs.open("index.html", "r", "utf-8")
@@ -33,6 +40,11 @@ def main():
 @app.route('/info')
 def info():
 	file = codecs.open("info.html", "r", "utf-8")
+	return file.read().replace('REPLACE', date)
+
+@app.route('/test')
+def test():
+	file = codecs.open("test.html", "r", "utf-8")
 	return file.read().replace('REPLACE', date)
 
 
@@ -44,17 +56,25 @@ def favicon():
 @app.route('/input', methods=['GET'])
 def web():
 	msg = request.args.get('msg')
+	logging.info('Incoming: '+msg)
 	session_id = ''
 	try:
 		response, session_id = sendToAssistant(msg)
-		response = interpret_watson_response(response) 
- 
+		logging.info('Watson: '+str(response))
+		try:
+			response = interpret_watson_response(response)
+			print(response)
+		except:
+			logging.warning('Error')
 	except:
 		response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
     
-	if session_id != 0:
-		return response +'|'+session_id
-	return re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
+	if session_id == 0:
+		response = re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
+	else:
+		response += '|'+session_id
+	logging.info('Out: '+response)
+	return response 
 
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp():
@@ -78,8 +98,9 @@ def whatsapp():
 		else:
 			sendToNum(text=response, num=user_num)
 
-	return 'a'
+	return response
 
+"""
 @app.route('/test', methods=['GET'])
 def test():
 	msg = request.args.get('msg')
@@ -88,7 +109,7 @@ def test():
 	except:
 		response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
 	return response+'\s'+session_id
-
+"""
 
 @app.route('/api/provincia/<string:prov>/<string:info>/', methods=['GET'])
 @app.route('/api/provincia/<string:prov>/', methods=['GET'])

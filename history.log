@@ -1,0 +1,15 @@
+INFO:root:Incoming: hola perry|
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|5ea0f167-a407-461b-b59e-b779b99400c9
+INFO:root:Incoming: hola|
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|37d74ccd-b02a-44a7-b747-599480d2c940
+INFO:root:Incoming: hola|
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|170728ab-a3cf-47cd-bf4d-1e9a53548658
+INFO:root:Incoming: hola|
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|e130af4e-b8a8-4cc4-bd84-a83c932f03dc
+INFO:root:Incoming: hola|
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|59fa59d6-c5e7-44b0-83cd-c864ef9d40aa
+INFO:root:Incoming: hola|59fa59d6-c5e7-44b0-83cd-c864ef9d40aa
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|59fa59d6-c5e7-44b0-83cd-c864ef9d40aa
+INFO:root:Incoming: hola|59fa59d6-c5e7-44b0-83cd-c864ef9d40aa
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '59fa59d6-c5e7-44b0-83cd-c864ef9d40aa'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|59fa59d6-c5e7-44b0-83cd-c864ef9d40aa

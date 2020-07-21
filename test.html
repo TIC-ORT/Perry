@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/style.css?REPLACE">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		<!-- for ios 7 style, multi-resolution icon of 152x152 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+		<link rel="apple-touch-icon" href="static/icon-152.png">
+		<!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="shortcut icon" sizes="196x196" href="static/icon-196.png">
+		<meta name="apple-mobile-web-app-title" content="TIC LAB">
+		<meta name="application-name" content="TIC LAB">
+	</head>
+<body>
+<input type="number" />
+<div id="d">
+
+</div>
+<div class="media-query-test">
+Height is less than 700px!
+</div>
+</body>
+<style type="text/css">
+	body, html{width:100%; height:100%;}
+	.media-query-test {
+	  display: none;
+	  color: white;
+	}
+
+	@media all and (max-height: 700px) {
+	  .media-query-test {
+	    display: block;
+	  }
+	}
+</style>
+<script type="text/javascript">
+	var d = document.getElementById('d');
+
+	checkDimensions();
+
+	window.onresize = checkDimensions;
+
+	function checkDimensions(prevHeight) {
+		d.innerHTML = 'Window dimensions: ' + window.innerWidth + ' x ' + window.innerHeight;
+	}
+</script>
+</html>
