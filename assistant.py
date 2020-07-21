@@ -19,20 +19,43 @@ def sendToAssistant(textInput):
 
 	assistant.set_disable_ssl_verification(True)
 
-	session_id = assistant.create_session(
-	    assistant_id=assistant_id
-	).get_result()['session_id']
+	if '|' in textInput:
 
+		params = textInput.split('|')
+		textInput = params[0]
+
+		if params[1] == '':
+			session_id = assistant.create_session(
+					assistant_id=assistant_id
+			).get_result()['session_id']
+		else:
+			session_id = params[1]
+			
+		response = assistant.message(
+				assistant_id=assistant_id,
+				session_id=session_id,
+				input={
+						'message_type': 'text',
+						'text': textInput,
+						'options': {
+							'return_context': True
+					}
+				}
+		).get_result()
+		
+		return response, session_id
+
+	session_id = assistant.create_session(
+					assistant_id=assistant_id
+			).get_result()['session_id']
 
 	response = assistant.message(
-	    assistant_id=assistant_id,
-	    session_id=session_id,
-	    input={
-	        'message_type': 'text',
-	        'text': textInput
-	    }
-	).get_result()
+				assistant_id=assistant_id,
+				session_id=session_id,
+				input={
+						'message_type': 'text',
+						'text': textInput
+					}
+		).get_result()
+	return response, 0
 	
-	response = interpret_watson_response(response)
-
-	return response

@@ -6,6 +6,11 @@ import difflib
 
 class API_Provincia:
 	
+	correciones = {
+		'Buenos Aires Autonomous City': 'la Ciudad Autonoma de Buenos Aires',
+		'Buenos Aires Province': 'Buenos Aires'
+	}
+
 	data = {}
 	endpoints = ['infectados', 'fallecidos', 'recuperados']
 	provincia = ''
@@ -59,7 +64,10 @@ class API_Provincia:
 						indexes[3]: row[3]
 					}
 
-	def get(self, info, prov=None):
+	def __str__(self):
+		return self.provincia
+
+	def get(self, info=None, prov=None):
 
 		if prov:
 			self.provincia = prov
@@ -71,9 +79,13 @@ class API_Provincia:
 			self.provincia = difflib.get_close_matches(self.provincia, self.data.keys())[0]
 		except:
 			self.provincia = self.provincia
-		try:
-			self.informacion = difflib.get_close_matches(info, self.endpoints)[0]
-		except:
-			self.informacion = self.informacion
+		if info:
+			try:
+				self.informacion = difflib.get_close_matches(info, self.endpoints)[0]
+			except:
+				self.informacion = self.informacion
 
-		return self.data[self.provincia][self.informacion]
+		if info:
+			return self.data[self.provincia][self.informacion]
+		else:
+			return self.data[self.provincia]
