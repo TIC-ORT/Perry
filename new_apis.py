@@ -4,9 +4,11 @@ from countries import natural
 from Provincia import API_Provincia
 from contacto import mensaje_contacto
 
+#Obtains JSON response from api url.
 def api_call(url):
 	return requests.get(url).json()
 
+#Obtains global case count of confirmed, deaths and recovered from COVID-19 with the use of api.covid19api.com
 def globales(info, lugar, fecha):
 	equivalents = {
 		'infectados': 'TotalConfirmed',
@@ -22,6 +24,7 @@ def globales(info, lugar, fecha):
 	text = choice(mensajes) 
 	return text
 
+#Obtains case count by country of confirmed, deaths and recovered from COVID-19 with the use of api.covid19api.com
 def pais(info, pais, fecha=None):
 	equivalents = {
 		'infectados': 'confirmed',
@@ -46,7 +49,7 @@ def pais(info, pais, fecha=None):
 			return 'El numero de '+info+' en '+ natural[pais]+ ' el '+fecha+' es de '+ str(number) + '.'
 	return 'No contamos con ese registro'
 
-
+#Obtains case count by Provincia Argentina of confirmed, deaths and recovered from COVID-19 with the use of api.covid19api.com
 def provincia(info, prov, fecha):	
 	api = API_Provincia(prov)
 	number = str(api.get(info))
@@ -57,19 +60,23 @@ def provincia(info, prov, fecha):
 	mensaje = 'El numero de '+info+' en '+ prov + ' es de '+ number.replace(',', '.') + '.'
 	return mensaje
 
+#Existing API resources.
 endpoints = {
 	'globales': globales,
 	'pais': pais,
 	'provincia': provincia
 }
 
+
 def interpret_watson_response(resp):
 	print(resp)
+	#Obtains Watsons text value from response.
 	text = resp['output']['generic'][0]['text']
 	entity = 'globales'
 	lugar = None
 	fecha = None
-	
+
+	#Determines whether or not Watsons response calls for API usage.	
 	if 'API' in text:
 		confidence = 0
 		try:
@@ -96,19 +103,23 @@ def interpret_watson_response(resp):
 		except:
 			None
 		print(intent, entity, lugar)
+		#Calls necesary API for sending message to user.
 		response = endpoints[entity](intent, lugar, fecha)
 		return response
 
 	if 'Contacto' in text:
+		#Watson recognizes users intent is Contact Information.
 		provincia = resp['output']['entities'][0]['value'] 
 		print(provincia)
 		return mensaje_contacto(provincia)
 
 	if 'Fecha' in text:
+		#Cases by Date provided in MM-DD format.
 		pais = resp["context"]["skills"]["main skill"]["user_defined"]['pais']
 		fecha = resp["context"]["skills"]["main skill"]["user_defined"]['fecha']
 		intencion = resp["context"]["skills"]["main skill"]["user_defined"]['intencion']
 		print(intencion, pais, fecha)
 		return endpoints['pais'](intencion, pais, fecha)
 
+	#No API call was needed, return Watsons text value.
 	return text

@@ -207,3 +207,545 @@ INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|b6868e0
 INFO:root:Incoming: 07-20|b6868e00-033c-462e-8be6-b34cd2bb1344
 INFO:root:Watson: {'output': {'intents': [{'intent': 'Protección_Infección_COVID', 'confidence': 0.42362067699432376}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Fecha'}]}, 'context': {'global': {'system': {'turn_count': 6}, 'session_id': 'b6868e00-033c-462e-8be6-b34cd2bb1344'}, 'skills': {'main skill': {'user_defined': {'pais': 'argentina', 'fecha': '07-20', 'intencion': 'fallecidos'}, 'system': {}}}}}
 INFO:root:Out: El numero de fallecidos en Argentina el 07-20 es de 113.|b6868e00-033c-462e-8be6-b34cd2bb1344
+INFO:root:Incoming: Cuantos fallecidos hay en argentina?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.8650326251983642}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'd70aae16-44fe-4f6d-8568-6c0619c84cf1'}, 'skills': {'main skill': {'user_defined': {'pais': 'argentina', 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|d70aae16-44fe-4f6d-8568-6c0619c84cf1
+INFO:root:Incoming: Cuantos fallecidos hay en argentina?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.8650326251983642}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f963cf3d-1351-4245-a3cc-953b9ecc953f'}, 'skills': {'main skill': {'user_defined': {'pais': 'argentina', 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|f963cf3d-1351-4245-a3cc-953b9ecc953f
+INFO:root:Incoming: fallecidos en argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.755989170074463}], 'entities': [{'entity': 'pais', 'location': [14, 23], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '35e0d5b1-0a79-4a91-9565-0478d7427e8d'}, 'skills': {'main skill': {'user_defined': {'pais': 'argentina', 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|35e0d5b1-0a79-4a91-9565-0478d7427e8d
+INFO:root:Incoming: fallecidos en argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.755989170074463}], 'entities': [{'entity': 'pais', 'location': [14, 23], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'fd0077cf-bbc1-470c-961d-2ab95b09f904'}, 'skills': {'main skill': {'user_defined': {'pais': 'argentina', 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|fd0077cf-bbc1-470c-961d-2ab95b09f904
+INFO:root:Incoming: 07-04|
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+ERROR:root:URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904' is not a valid GUID., Code: 400 , X-global-transaction-id: 45b26ee8f77a73ee08d7432567b73a08
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: 07-04|
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+ERROR:root:URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904' is not a valid GUID., Code: 400 , X-global-transaction-id: f4b7185b555c826a5bf98b3d9b58aea1
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: 07-20|
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+
+ERROR:root:URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+' is not a valid GUID., Code: 400 , X-global-transaction-id: 2f2aed6666bc25f513ccca428300a55a
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: 07-20|
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+
+ERROR:root:URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+fd0077cf-bbc1-470c-961d-2ab95b09f904
+' is not a valid GUID., Code: 400 , X-global-transaction-id: a53b36049b7f15d9c34c0c6ee368b5b5
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Cuantos infectados hay en san juan?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '5e963bd1-f272-425c-b12d-06e1be218af3'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|5e963bd1-f272-425c-b12d-06e1be218af3
+INFO:root:Incoming: Cuantos infectados hay en san juan?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '71b6b26f-e908-4a3e-9a37-dec10a027d0a'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|71b6b26f-e908-4a3e-9a37-dec10a027d0a
+INFO:root:Incoming: Y en cordoba?|
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+ERROR:root:URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a' is not a valid GUID., Code: 400 , X-global-transaction-id: 1cbd20da063e24d827b2fbcf052b4336
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Y en cordoba?|
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+ERROR:root:URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a' is not a valid GUID., Code: 400 , X-global-transaction-id: 945c0dbab47a943da82f6eb7f08b151f
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Y recuperados?|
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+
+ERROR:root:URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+' is not a valid GUID., Code: 400 , X-global-transaction-id: 9a35d72c5244fc70371203475f86bf83
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Y recuperados?|
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+
+ERROR:root:URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+71b6b26f-e908-4a3e-9a37-dec10a027d0a
+' is not a valid GUID., Code: 400 , X-global-transaction-id: 0406184b14010dc0d74725aba2bcd52a
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Cuantos fallecidos hay en san luis|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.41610285627718613}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'd92aa6b0-5b87-46bc-be3b-a2ebe410eb27'}, 'skills': {'main skill': {'user_defined': {'pais': None, 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|d92aa6b0-5b87-46bc-be3b-a2ebe410eb27
+INFO:root:Incoming: Cuantos fallecidos hay en san luis|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.41610285627718613}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '4f3a72a8-287d-4a7f-a245-e00d66635ab8'}, 'skills': {'main skill': {'user_defined': {'pais': None, 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|4f3a72a8-287d-4a7f-a245-e00d66635ab8
+INFO:root:Incoming: Cuantos fallecidos hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.883702564239502}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'b4b730b6-10d5-47a1-801f-49918107e34e'}, 'skills': {'main skill': {'user_defined': {'pais': None, 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|b4b730b6-10d5-47a1-801f-49918107e34e
+INFO:root:Incoming: Cuantos fallecidos hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.883702564239502}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'ae882385-7c4f-431b-8d95-c5caa1837dc8'}, 'skills': {'main skill': {'user_defined': {'pais': None, 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|ae882385-7c4f-431b-8d95-c5caa1837dc8
+INFO:root:Incoming: 07-04|
+ae882385-7c4f-431b-8d95-c5caa1837dc8
+ERROR:root:URL sessionid parameter '
+ae882385-7c4f-431b-8d95-c5caa1837dc8' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+ae882385-7c4f-431b-8d95-c5caa1837dc8' is not a valid GUID., Code: 400 , X-global-transaction-id: f9acc2bbd9f10edd834ed5e4f4f307cc
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: 07-04|
+ae882385-7c4f-431b-8d95-c5caa1837dc8
+ERROR:root:URL sessionid parameter '
+ae882385-7c4f-431b-8d95-c5caa1837dc8' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+ae882385-7c4f-431b-8d95-c5caa1837dc8' is not a valid GUID., Code: 400 , X-global-transaction-id: d9d064d0b86bcf9a9c58a287f761c1bb
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Cuantos fallecidos hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.883702564239502}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '319eab6c-913d-4630-88da-9146ef89b8f7'}, 'skills': {'main skill': {'user_defined': {'pais': None, 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|319eab6c-913d-4630-88da-9146ef89b8f7
+INFO:root:Incoming: Cuantos fallecidos hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.883702564239502}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, ingrese su fecha en el siguiente formato MM-DD'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8cac839e-9932-4703-900e-82f2865cdd40'}, 'skills': {'main skill': {'user_defined': {'pais': None, 'fecha': '<?text.input>', 'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: Por favor, ingrese su fecha en el siguiente formato MM-DD|8cac839e-9932-4703-900e-82f2865cdd40
+INFO:root:Incoming: Cuantos infectados hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '633af963-0798-418d-bd77-f8947ee5b7f4'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|633af963-0798-418d-bd77-f8947ee5b7f4
+INFO:root:Incoming: Cuantos infectados hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '17e7a151-7233-4c08-8f47-dad7725ab4b9'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|17e7a151-7233-4c08-8f47-dad7725ab4b9
+INFO:root:Incoming: Y en san luis|
+17e7a151-7233-4c08-8f47-dad7725ab4b9
+ERROR:root:URL sessionid parameter '
+17e7a151-7233-4c08-8f47-dad7725ab4b9' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+17e7a151-7233-4c08-8f47-dad7725ab4b9' is not a valid GUID., Code: 400 , X-global-transaction-id: 3dc314854d79520f4cb60613c4d7cca9
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Y en san luis|
+17e7a151-7233-4c08-8f47-dad7725ab4b9
+ERROR:root:URL sessionid parameter '
+17e7a151-7233-4c08-8f47-dad7725ab4b9' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+17e7a151-7233-4c08-8f47-dad7725ab4b9' is not a valid GUID., Code: 400 , X-global-transaction-id: e5bc1908de8f293ed34e1d03597213d0
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Cuantos infectados hay en san jusn|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9870134353637696}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 0.88}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '9f85e18e-4bd6-43b6-b4f0-5d2090dddd87'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|9f85e18e-4bd6-43b6-b4f0-5d2090dddd87
+INFO:root:Incoming: Cuantos infectados hay en san jusn|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9870134353637696}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 0.88}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'a079ced2-5d43-4fce-8e98-b73abca15534'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|a079ced2-5d43-4fce-8e98-b73abca15534
+INFO:root:Incoming: Y en san luis?|
+a079ced2-5d43-4fce-8e98-b73abca15534
+ERROR:root:URL sessionid parameter '
+a079ced2-5d43-4fce-8e98-b73abca15534' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+a079ced2-5d43-4fce-8e98-b73abca15534' is not a valid GUID., Code: 400 , X-global-transaction-id: 29e145c953ddd40e009c752aa6e9736d
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Y en san luis?|
+a079ced2-5d43-4fce-8e98-b73abca15534
+ERROR:root:URL sessionid parameter '
+a079ced2-5d43-4fce-8e98-b73abca15534' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter '
+a079ced2-5d43-4fce-8e98-b73abca15534' is not a valid GUID., Code: 400 , X-global-transaction-id: 3cee542ae6df89bc444c44087ab90133
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Cuantos infectados hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '6fc61678-663a-47d8-a782-f4d652d24ad3'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|6fc61678-663a-47d8-a782-f4d652d24ad3
+INFO:root:Incoming: Cuantos infectados hay en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'ba48f9db-652a-460a-ab2e-d082a307b2ae'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|ba48f9db-652a-460a-ab2e-d082a307b2ae
+INFO:root:Incoming: Y en san luis?|ba48f9db-652a-460a-ab2e-d082a307b2ae
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'ba48f9db-652a-460a-ab2e-d082a307b2ae'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Luis'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Luis es de 17.|ba48f9db-652a-460a-ab2e-d082a307b2ae
+INFO:root:Incoming: Y en san luis?|ba48f9db-652a-460a-ab2e-d082a307b2ae
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'ba48f9db-652a-460a-ab2e-d082a307b2ae'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Luis'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Luis es de 17.|ba48f9db-652a-460a-ab2e-d082a307b2ae
+INFO:root:Incoming: Cuantos infectados hay en san juan?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f9cd88eb-d843-4bc7-bda5-a510c6418e23'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|f9cd88eb-d843-4bc7-bda5-a510c6418e23
+INFO:root:Incoming: Cuantos infectados hay en san juan?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9866927146911622}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0b'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|f1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+INFO:root:Incoming: Y en san luis?|f1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0b'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Luis'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Luis es de 17.|f1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+INFO:root:Incoming: Y en san luis?|f1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0b'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Luis'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Luis es de 17.|f1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+INFO:root:Incoming: |f1d51bf1-0df9-4437-9bfd-2b55001b4a0bf1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+ERROR:root:URL sessionid parameter 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0bf1d51bf1-0df9-4437-9bfd-2b55001b4a0b' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0bf1d51bf1-0df9-4437-9bfd-2b55001b4a0b' is not a valid GUID., Code: 400 , X-global-transaction-id: dfaa06e9611cdf8fb8e2d9998e9981c8
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: |f1d51bf1-0df9-4437-9bfd-2b55001b4a0bf1d51bf1-0df9-4437-9bfd-2b55001b4a0b
+ERROR:root:URL sessionid parameter 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0bf1d51bf1-0df9-4437-9bfd-2b55001b4a0b' is not a valid GUID.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 228, in send
+    raise ApiException(
+ibm_cloud_sdk_core.api_exception.ApiException: Error: URL sessionid parameter 'f1d51bf1-0df9-4437-9bfd-2b55001b4a0bf1d51bf1-0df9-4437-9bfd-2b55001b4a0b' is not a valid GUID., Code: 400 , X-global-transaction-id: e23bb07a113061bb257292cb845dea71
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Cantidad de infectados en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9782028675079346}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'b16fde58-36a5-4896-aa87-7f32a0c557ec'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|b16fde58-36a5-4896-aa87-7f32a0c557ec
+INFO:root:Incoming: Cantidad de infectados en san juan|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9782028675079346}], 'entities': [{'entity': 'provincia', 'location': [26, 34], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '2604510e-27db-426d-a621-f371293f50f1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|2604510e-27db-426d-a621-f371293f50f1
+INFO:root:Incoming: Y en san luis?|2604510e-27db-426d-a621-f371293f50f1
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '2604510e-27db-426d-a621-f371293f50f1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Luis'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Luis es de 17.|2604510e-27db-426d-a621-f371293f50f1
+INFO:root:Incoming: Y en san luis?|2604510e-27db-426d-a621-f371293f50f1
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Luis', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '2604510e-27db-426d-a621-f371293f50f1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Luis'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Luis es de 17.|2604510e-27db-426d-a621-f371293f50f1
+INFO:root:Incoming: Cuantos infectados hay en cordoba|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9888347148895265}], 'entities': [{'entity': 'provincia', 'location': [26, 33], 'value': 'Córdoba', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '9422a354-b2c2-42dc-8d18-205fb15e76a3'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Córdoba es de 1.372.|9422a354-b2c2-42dc-8d18-205fb15e76a3
+INFO:root:Incoming: Cuantos infectados hay en cordoba|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9888347148895265}], 'entities': [{'entity': 'provincia', 'location': [26, 33], 'value': 'Córdoba', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '0b5f3ad1-adef-4519-bde1-443c133425f5'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Córdoba es de 1.372.|0b5f3ad1-adef-4519-bde1-443c133425f5
+INFO:root:Incoming: Y recuperados?|0b5f3ad1-adef-4519-bde1-443c133425f5
+INFO:root:Watson: {'output': {'intents': [{'intent': 'recuperados', 'confidence': 0.9680385589599609}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '0b5f3ad1-adef-4519-bde1-443c133425f5'}, 'skills': {'main skill': {'user_defined': {'intencion': 'recuperados', 'globales': None}, 'system': {}}}}}
+WARNING:root:Error: Format specifier missing precision
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|0b5f3ad1-adef-4519-bde1-443c133425f5
+INFO:root:Incoming: Y recuperados?|0b5f3ad1-adef-4519-bde1-443c133425f5
+INFO:root:Watson: {'output': {'intents': [{'intent': 'recuperados', 'confidence': 0.9680385589599609}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '0b5f3ad1-adef-4519-bde1-443c133425f5'}, 'skills': {'main skill': {'user_defined': {'intencion': 'recuperados', 'globales': None}, 'system': {}}}}}
+WARNING:root:Error: Format specifier missing precision
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|0b5f3ad1-adef-4519-bde1-443c133425f5
+INFO:root:Incoming: Cantidad de infectados en cordoba|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9784446239471436}], 'entities': [{'entity': 'provincia', 'location': [26, 33], 'value': 'Córdoba', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'd78ba430-fe74-44c9-b645-82f0c4b0c732'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Córdoba es de 1.372.|d78ba430-fe74-44c9-b645-82f0c4b0c732
+INFO:root:Incoming: Cantidad de infectados en cordoba|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9784446239471436}], 'entities': [{'entity': 'provincia', 'location': [26, 33], 'value': 'Córdoba', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c03920cb-b28e-4090-b643-d76753b0dd04'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Córdoba es de 1.372.|c03920cb-b28e-4090-b643-d76753b0dd04
+INFO:root:Incoming: Y en san juan?|c03920cb-b28e-4090-b643-d76753b0dd04
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'c03920cb-b28e-4090-b643-d76753b0dd04'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Juan'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|c03920cb-b28e-4090-b643-d76753b0dd04
+INFO:root:Incoming: Y en san juan?|c03920cb-b28e-4090-b643-d76753b0dd04
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [5, 13], 'value': 'San-Juan', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'c03920cb-b28e-4090-b643-d76753b0dd04'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': None, 'provincia': 'San-Juan'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en San Juan es de 18.|c03920cb-b28e-4090-b643-d76753b0dd04
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'e75fccf7-0ae0-4b82-b60d-d1a514283456'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|e75fccf7-0ae0-4b82-b60d-d1a514283456
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f7ebea94-fe9f-417b-b10c-2a73a2ea8802'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|f7ebea94-fe9f-417b-b10c-2a73a2ea8802
+INFO:root:Incoming: Que es el coronavirus|f7ebea94-fe9f-417b-b10c-2a73a2ea8802
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'f7ebea94-fe9f-417b-b10c-2a73a2ea8802'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |f7ebea94-fe9f-417b-b10c-2a73a2ea8802
+INFO:root:Incoming: Que es el coronavirus|f7ebea94-fe9f-417b-b10c-2a73a2ea8802
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'f7ebea94-fe9f-417b-b10c-2a73a2ea8802'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |f7ebea94-fe9f-417b-b10c-2a73a2ea8802
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '35c9f1cc-875e-4d77-9e60-0e61248e8634'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|35c9f1cc-875e-4d77-9e60-0e61248e8634
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '3bc3dca1-1ac5-4133-b52d-bf78473b2a2e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|3bc3dca1-1ac5-4133-b52d-bf78473b2a2e
+INFO:root:Incoming: Que es el coronavirus|3bc3dca1-1ac5-4133-b52d-bf78473b2a2e
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '3bc3dca1-1ac5-4133-b52d-bf78473b2a2e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |3bc3dca1-1ac5-4133-b52d-bf78473b2a2e
+INFO:root:Incoming: Que es el coronavirus|3bc3dca1-1ac5-4133-b52d-bf78473b2a2e
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '3bc3dca1-1ac5-4133-b52d-bf78473b2a2e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |3bc3dca1-1ac5-4133-b52d-bf78473b2a2e
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c887e27f-4b82-47f4-b642-9d4f75a07bbc'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|c887e27f-4b82-47f4-b642-9d4f75a07bbc
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '64f8f9e5-6c31-4828-80fe-39de969f5e7c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Incoming: Que es el coronavirus|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '64f8f9e5-6c31-4828-80fe-39de969f5e7c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Incoming: Que es el coronavirus|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '64f8f9e5-6c31-4828-80fe-39de969f5e7c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Incoming: Quien sos|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Soy Perry! Tu <b>asistente virtual las 24 horas del día</b>. Si tenes dudas sobre el actual brote de coronavirus 🦠, podes preguntarme a mi :)'}]}, 'context': {'global': {'system': {'turn_count': 4}, 'session_id': '64f8f9e5-6c31-4828-80fe-39de969f5e7c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Soy Perry! Tu <b>asistente virtual las 24 horas del día</b>. Si tenes dudas sobre el actual brote de coronavirus 🦠, podes preguntarme a mi :)|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Incoming: Quien sos|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Mi nombre es Perry. Fui diseñado por estudiantes de 3er. año para <b>resolver tus dudas acerca del brote del coronavirus 🦠</b> y estoy disponible las 24 horas del día.'}]}, 'context': {'global': {'system': {'turn_count': 5}, 'session_id': '64f8f9e5-6c31-4828-80fe-39de969f5e7c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Mi nombre es Perry. Fui diseñado por estudiantes de 3er. año para <b>resolver tus dudas acerca del brote del coronavirus 🦠</b> y estoy disponible las 24 horas del día.|64f8f9e5-6c31-4828-80fe-39de969f5e7c
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8ae93432-fd23-4bf3-9cda-96f77a33135c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|8ae93432-fd23-4bf3-9cda-96f77a33135c
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Que es el coronavirus|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Que es el coronavirus|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Descripción_COVID', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. '}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Los coronavirus son una gran familia de virus🦠 Hay algunos que causan <strong style="color: #f2674a">enfermedades en los humanos</strong> y otros que circulan <strong style="color: #f2674a">entre animales</strong>, como 🐪 o 🦇.En los humanos, causan <strong style="color: #f2674a">infecciones respiratorias</strong> que pueden ir desde un simple resfriado común hasta enfermedades más graves, como el síndrome respiratorio agudo severo que está causando la <strong style="color: #f2674a">COVID-19</strong>.<strong style="color: #f2674a">Rara vez</strong> los coronavirus de los animales pueden infectar a las personas y luego propagarse, como ha ocurrido en este caso. |c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Cantidad de infectados en chile|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9678862571716309}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'chile', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 4}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Chile es de 334.683.|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Cantidad de infectados en chile|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9678862571716309}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'chile', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 5}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Chile es de 334.683.|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Y en peru?|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'pais', 'location': [5, 9], 'value': 'peru', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 6}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': 'peru', 'provincia': None}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Perú es de 362.087.|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Y en peru?|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'pais', 'location': [5, 9], 'value': 'peru', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 7}, 'session_id': 'c2bffd70-2054-473b-8554-fa00380499b1'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': 'peru', 'provincia': None}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Perú es de 362.087.|c2bffd70-2054-473b-8554-fa00380499b1
+INFO:root:Incoming: Cuantos infectados hay en Chile|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9832561492919922}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'chile', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '48611add-b073-4db9-940c-305968884223'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Chile es de 334.683.|48611add-b073-4db9-940c-305968884223
+INFO:root:Incoming: Cuantos infectados hay en Chile|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9832561492919922}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'chile', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '4cf60791-0e6a-45ab-bcc9-5fcef8084376'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Chile es de 334.683.|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Incoming: Y en China|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'pais', 'location': [5, 10], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '4cf60791-0e6a-45ab-bcc9-5fcef8084376'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': 'china', 'provincia': None}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en China es de 85.314.|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Incoming: Y en China|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'pais', 'location': [5, 10], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '4cf60791-0e6a-45ab-bcc9-5fcef8084376'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': 'china', 'provincia': None}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en China es de 85.314.|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Incoming: Muchas gracias|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 4}, 'session_id': '4cf60791-0e6a-45ab-bcc9-5fcef8084376'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': 'china', 'provincia': None}, 'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Incoming: Muchas gracias|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 5}, 'session_id': '4cf60791-0e6a-45ab-bcc9-5fcef8084376'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados', 'pais': 'china', 'provincia': None}, 'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|4cf60791-0e6a-45ab-bcc9-5fcef8084376
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '672fe22d-f6de-4f73-9421-b0606d61ea02'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|672fe22d-f6de-4f73-9421-b0606d61ea02
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '2c803f3d-510a-4092-9d86-513625a7303f'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|2c803f3d-510a-4092-9d86-513625a7303f
+INFO:root:Incoming: Hola perry|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'e25124cb-07e6-4803-abd7-edb43482f9e8'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|e25124cb-07e6-4803-abd7-edb43482f9e8
+INFO:root:Incoming: Hola perry|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '119a6f2a-23f2-4088-8ef8-5b7ac7f4e529'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|119a6f2a-23f2-4088-8ef8-5b7ac7f4e529
+INFO:root:Incoming: Muchas gracias|119a6f2a-23f2-4088-8ef8-5b7ac7f4e529
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '119a6f2a-23f2-4088-8ef8-5b7ac7f4e529'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|119a6f2a-23f2-4088-8ef8-5b7ac7f4e529
+INFO:root:Incoming: Muchas gracias|119a6f2a-23f2-4088-8ef8-5b7ac7f4e529
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '119a6f2a-23f2-4088-8ef8-5b7ac7f4e529'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|119a6f2a-23f2-4088-8ef8-5b7ac7f4e529
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8f1ab579-291e-4c31-a971-f664cd3498d5'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|8f1ab579-291e-4c31-a971-f664cd3498d5
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'b2647f43-bd18-4c53-a40c-82240071e66e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|b2647f43-bd18-4c53-a40c-82240071e66e
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '3373b403-9cd5-4c76-ac53-9dae2526069f'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|3373b403-9cd5-4c76-ac53-9dae2526069f
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'dc8e792c-cd06-4c2f-9fe9-9b8711e4e685'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|dc8e792c-cd06-4c2f-9fe9-9b8711e4e685
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'a0df24b3-6d5f-47b1-992a-cda417839663'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|a0df24b3-6d5f-47b1-992a-cda417839663
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'adbd5bee-0c4e-46b4-b1ed-175a43a468d6'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|adbd5bee-0c4e-46b4-b1ed-175a43a468d6
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8d975dab-7bdc-4cd2-b0ee-28f306c1972b'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|8d975dab-7bdc-4cd2-b0ee-28f306c1972b
+INFO:root:Incoming: Muchas gracias|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '86ef95c1-5487-43de-8db2-4b34bb8bc3c0'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif|86ef95c1-5487-43de-8db2-4b34bb8bc3c0
+INFO:root:Incoming: Como prevenir contagiarse?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Protección_Infección_COVID', 'confidence': 0.9874886989593505}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:\n1.<strong style="color:#f2674a"> Lavate las manos a menudo</strong> con agua y jabón durante al menos 20 segundos</div><div class="divider"></div><center> <div class="emoji" style="font-size: 70px">💧 🧼 👏</div></center>\n2. <strong style="color:#f2674a">Evita tocarte</strong> la cara con las manos sin lavar🚫🤦\n3. #QuedateEnCasa🏠\n4. Al toser o estornudar, <strong style="color:#f2674a">cubrite la boca y la nariz con el codo flexionado🤧💪</strong> y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol\nhttps://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '0b72f851-2f6a-43e5-8530-305f2d9eb27d'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:
+1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏
+2. Evita tocarte la cara con las manos sin lavar🚫🤦
+3. #QuedateEnCasa🏠
+4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol
+|0b72f851-2f6a-43e5-8530-305f2d9eb27d
+INFO:root:Incoming: Como prevenir contagiarse?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Protección_Infección_COVID', 'confidence': 0.9874886989593505}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:\n1.<strong style="color:#f2674a"> Lavate las manos a menudo</strong> con agua y jabón durante al menos 20 segundos</div><div class="divider"></div><center> <div class="emoji" style="font-size: 70px">💧 🧼 👏</div></center>\n2. <strong style="color:#f2674a">Evita tocarte</strong> la cara con las manos sin lavar🚫🤦\n3. #QuedateEnCasa🏠\n4. Al toser o estornudar, <strong style="color:#f2674a">cubrite la boca y la nariz con el codo flexionado🤧💪</strong> y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol\nhttps://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '5b7ad46b-6612-4a2d-8c03-977ec0d38e6e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:
+1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏
+2. Evita tocarte la cara con las manos sin lavar🚫🤦
+3. #QuedateEnCasa🏠
+4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol
+|5b7ad46b-6612-4a2d-8c03-977ec0d38e6e
+INFO:root:Incoming: Muchas gracias|5b7ad46b-6612-4a2d-8c03-977ec0d38e6e
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '5b7ad46b-6612-4a2d-8c03-977ec0d38e6e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: |5b7ad46b-6612-4a2d-8c03-977ec0d38e6e
+INFO:root:Incoming: Muchas gracias|5b7ad46b-6612-4a2d-8c03-977ec0d38e6e
+INFO:root:Watson: {'output': {'intents': [{'intent': 'despedida', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '5b7ad46b-6612-4a2d-8c03-977ec0d38e6e'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: |5b7ad46b-6612-4a2d-8c03-977ec0d38e6e
+INFO:root:Incoming: Quien sos|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Soy Perry! Tu <b>asistente virtual las 24 horas del día</b>. Si tenes dudas sobre el actual brote de coronavirus 🦠, podes preguntarme a mi :)'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'df498677-f670-456b-b679-84110cbe6436'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Soy Perry! Tu <b>asistente virtual las 24 horas del día</b>. Si tenes dudas sobre el actual brote de coronavirus 🦠, podes preguntarme a mi :)|df498677-f670-456b-b679-84110cbe6436
+INFO:root:Incoming: quien sos|df498677-f670-456b-b679-84110cbe6436
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Me llamo Perry y soy un asistente virtual diseñado para ayudarte. Podes preguntarme tus dudas, por ejemplo: <br> <b>▪ Síntomas 🌡️</b> <br> <b>▪ Nº de contagiados</b><br><b>▪ Teléfonos de emergencia ☎️</b><br><b>▪ Cómo protegerte✋💦🧼😷</b>'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'df498677-f670-456b-b679-84110cbe6436'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Me llamo Perry y soy un asistente virtual diseñado para ayudarte. Podes preguntarme tus dudas, por ejemplo: <br> <b>▪ Síntomas 🌡️</b> <br> <b>▪ Nº de contagiados</b><br><b>▪ Teléfonos de emergencia ☎️</b><br><b>▪ Cómo protegerte✋💦🧼😷</b>|df498677-f670-456b-b679-84110cbe6436
+INFO:root:Incoming: quien sos|df498677-f670-456b-b679-84110cbe6436
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Mi nombre es Perry. Fui diseñado por estudiantes de 3er. año para <b>resolver tus dudas acerca del brote del coronavirus 🦠</b> y estoy disponible las 24 horas del día.'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'df498677-f670-456b-b679-84110cbe6436'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Mi nombre es Perry. Fui diseñado por estudiantes de 3er. año para <b>resolver tus dudas acerca del brote del coronavirus 🦠</b> y estoy disponible las 24 horas del día.|df498677-f670-456b-b679-84110cbe6436
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': None, 'MediaUrl': 'Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:\n1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏\n2. Evita tocarte la cara con las manos sin lavar🚫🤦\n3. #QuedateEnCasa🏠\n4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol\nhttps://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg'}
+INFO:twilio.http_client:POST Response: 400 {"code": 21620, "message": "Media urls: Para protegerte del coronavirus, hay algunas acciones b\u00e1sicas que te pueden ayudar:\n1. Lavate las manos a menudo con agua y jab\u00f3n durante al menos 20 segundos \ud83d\udca7 \ud83e\uddfc \ud83d\udc4f\n2. Evita tocarte la cara con las manos sin lavar\ud83d\udeab\ud83e\udd26\n3. #QuedateEnCasa\ud83c\udfe0\n4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado\ud83e\udd27\ud83d\udcaa y l\u00e1vate las manos con agua y jab\u00f3n o con un desinfectante de manos a base de alcohol\nhttps://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg are invalid. Please use only valid http and https urls", "more_info": "https://www.twilio.com/docs/errors/21620", "status": 400}
+ERROR:main:Exception on /whatsapp [POST]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 141, in whatsapp
+    sendToNum(media=response, num=user_num)
+  File "/home/runner/Chatbot/whatsapp.py", line 10, in sendToNum
+    client.messages.create(
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 89, in create
+    payload = self._version.create(method='POST', uri=self._uri, data=data, )
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/twilio/base/version.py", line 204, in create
+    raise self.exception(method, uri, response, 'Unable to create record')
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Media urls: Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:
+1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏
+2. Evita tocarte la cara con las manos sin lavar🚫🤦
+3. #QuedateEnCasa🏠
+4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol
+https://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg are invalid. Please use only valid http and https urls[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21620[0m
+
+
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces preguntas concretas y evitas los párrafos largos.', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SM1d618dc82abc47eab7bdf35f3131dc81", "date_created": "Wed, 22 Jul 2020 22:36:39 +0000", "date_updated": "Wed, 22 Jul 2020 22:36:39 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "\u00a1Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.\ud83e\udd17. Funciono mejor si me haces preguntas concretas y evitas los p\u00e1rrafos largos.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM1d618dc82abc47eab7bdf35f3131dc81.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM1d618dc82abc47eab7bdf35f3131dc81/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': 'Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SM9074c6f2f078431c87ed3f13a5fc6188", "date_created": "Wed, 22 Jul 2020 22:37:05 +0000", "date_updated": "Wed, 22 Jul 2020 22:37:05 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "Para protegerte del coronavirus, hay algunas acciones b\u00e1sicas que te pueden ayudar:", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM9074c6f2f078431c87ed3f13a5fc6188.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM9074c6f2f078431c87ed3f13a5fc6188/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': '1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SM8eb9b102062c4cfeb1ea49dd090c33ff", "date_created": "Wed, 22 Jul 2020 22:37:06 +0000", "date_updated": "Wed, 22 Jul 2020 22:37:06 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "1. Lavate las manos a menudo con agua y jab\u00f3n durante al menos 20 segundos \ud83d\udca7 \ud83e\uddfc \ud83d\udc4f", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM8eb9b102062c4cfeb1ea49dd090c33ff.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM8eb9b102062c4cfeb1ea49dd090c33ff/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': '2. Evita tocarte la cara con las manos sin lavar🚫🤦', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SMda0e3508e63b493088ea95660c524ca1", "date_created": "Wed, 22 Jul 2020 22:37:06 +0000", "date_updated": "Wed, 22 Jul 2020 22:37:06 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "2. Evita tocarte la cara con las manos sin lavar\ud83d\udeab\ud83e\udd26", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMda0e3508e63b493088ea95660c524ca1.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMda0e3508e63b493088ea95660c524ca1/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': '3. #QuedateEnCasa🏠', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SM2a8d6952fc974a0bbcd82f3b6635046f", "date_created": "Wed, 22 Jul 2020 22:37:06 +0000", "date_updated": "Wed, 22 Jul 2020 22:37:06 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "3. #QuedateEnCasa\ud83c\udfe0", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM2a8d6952fc974a0bbcd82f3b6635046f.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM2a8d6952fc974a0bbcd82f3b6635046f/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': '4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SMa22db504bb284f3e8ded6d98ee43639d", "date_created": "Wed, 22 Jul 2020 22:37:07 +0000", "date_updated": "Wed, 22 Jul 2020 22:37:07 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado\ud83e\udd27\ud83d\udcaa y l\u00e1vate las manos con agua y jab\u00f3n o con un desinfectante de manos a base de alcohol", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMa22db504bb284f3e8ded6d98ee43639d.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMa22db504bb284f3e8ded6d98ee43639d/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': None, 'MediaUrl': 'Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:\n1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏\n2. Evita tocarte la cara con las manos sin lavar🚫🤦\n3. #QuedateEnCasa🏠\n4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol\nhttps://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg'}
+INFO:twilio.http_client:POST Response: 400 {"code": 21620, "message": "Media urls: Para protegerte del coronavirus, hay algunas acciones b\u00e1sicas que te pueden ayudar:\n1. Lavate las manos a menudo con agua y jab\u00f3n durante al menos 20 segundos \ud83d\udca7 \ud83e\uddfc \ud83d\udc4f\n2. Evita tocarte la cara con las manos sin lavar\ud83d\udeab\ud83e\udd26\n3. #QuedateEnCasa\ud83c\udfe0\n4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado\ud83e\udd27\ud83d\udcaa y l\u00e1vate las manos con agua y jab\u00f3n o con un desinfectante de manos a base de alcohol\nhttps://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg are invalid. Please use only valid http and https urls", "more_info": "https://www.twilio.com/docs/errors/21620", "status": 400}
+ERROR:main:Exception on /whatsapp [POST]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 141, in whatsapp
+    sendToNum(media=response, num=user_num)
+  File "/home/runner/Chatbot/whatsapp.py", line 10, in sendToNum
+    client.messages.create(
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 89, in create
+    payload = self._version.create(method='POST', uri=self._uri, data=data, )
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/twilio/base/version.py", line 204, in create
+    raise self.exception(method, uri, response, 'Unable to create record')
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Media urls: Para protegerte del coronavirus, hay algunas acciones básicas que te pueden ayudar:
+1. Lavate las manos a menudo con agua y jabón durante al menos 20 segundos 💧 🧼 👏
+2. Evita tocarte la cara con las manos sin lavar🚫🤦
+3. #QuedateEnCasa🏠
+4. Al toser o estornudar, cubrite la boca y la nariz con el codo flexionado🤧💪 y lávate las manos con agua y jabón o con un desinfectante de manos a base de alcohol
+https://fpp.org.pe/wp-content/uploads/2019/08/Lavado-de-manos-1200x768.jpg are invalid. Please use only valid http and https urls[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21620[0m
+
+
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491154026445', 'From': 'whatsapp:+14155238886', 'Body': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SM8b68ee1a518d4f518785a6ce2060014b", "date_created": "Wed, 22 Jul 2020 22:37:41 +0000", "date_updated": "Wed, 22 Jul 2020 22:37:41 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491154026445", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM8b68ee1a518d4f518785a6ce2060014b.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SM8b68ee1a518d4f518785a6ce2060014b/Media.json"}}

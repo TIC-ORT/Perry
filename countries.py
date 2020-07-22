@@ -1,3 +1,4 @@
+#Country key equivalence between Watsons existing (Country Entity Value/covid19api key) and spanish natural language. 
 natural = {"afghanistan": "Afganistán",
 "ala-aland-islands": "ALA Islas Aland",
 "albania": "Albania",

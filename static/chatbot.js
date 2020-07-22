@@ -22,8 +22,7 @@ function downloadInnerHtml(filename, elId, mimeType) {
 var session_id = '';
 
 const colors = ["rgb(255,186,73)", "rgb(242,103,74)", "rgb(32,163,158)", "rgb(137,108,192)"];
-const randomColor = colors[Math.floor(Math.random() * colors.length)];
-document.body.style.backgroundColor = randomColor;
+document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 
 var input = document.getElementById("usrMessageInput");
 input.addEventListener("keyup", function(event) {

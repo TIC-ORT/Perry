@@ -1,3 +1,5 @@
+#Dictionary containing telephone numbers for COVID-19 assistance through Argentina provided by Ministerio de Salud de Argentina
+
 nacional = '<a class="aLight" href="tel:120">Llamá al: 120</a>'
 telefonos = {
 	'Buenos-Aires-Autonomous-City': ' Ciudad Autónoma de Buenos Aire<br><a class="aLight" href="tel:148"> Llamá al: 148</a>',

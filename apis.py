@@ -1,4 +1,3 @@
-#ESTE SCRIPT YA NO SE USA
 #DEPRACATED
 
 from random import choice
