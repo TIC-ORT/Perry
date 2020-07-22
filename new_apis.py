@@ -77,12 +77,9 @@ def interpret_watson_response(resp):
 			confidence = resp['output']['intents'][0]['confidence']
 
 		except:
-
 			None
 		if confidence < 0.5:
-
 			intent = resp["context"]["skills"]["main skill"]["user_defined"]['intencion']
-
 		print(intent)
 		try:
 			entities = list(resp["context"]["skills"]["main skill"]["user_defined"].keys())
@@ -100,7 +97,6 @@ def interpret_watson_response(resp):
 			None
 		print(intent, entity, lugar)
 		response = endpoints[entity](intent, lugar, fecha)
-		
 		return response
 
 	if 'Contacto' in text:

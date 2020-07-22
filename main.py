@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 import re
 import logging
 logging.basicConfig(filename='history.log',level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 date = datetime.today().strftime('%Y-%m-%d')
 
@@ -64,15 +65,16 @@ def web():
 		try:
 			response = interpret_watson_response(response)
 			print(response)
-		except:
-			logging.warning('Error')
+		except Exception as e:
+			logging.warning('Error: '+str(e))
+			response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
 	except:
 		response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
     
 	if session_id == 0:
 		response = re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
 	else:
-		response += '|'+session_id
+		response =  str(response)+'|'+session_id
 	logging.info('Out: '+response)
 	return response 
 
