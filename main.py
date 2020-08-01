@@ -1,19 +1,25 @@
+#Server dependencies
+from gevent.pywsgi import WSGIServer
+from threading import Thread
 from flask import Flask, request, send_from_directory
 from flask_mobility import Mobility
 import os
+
+#Apis used
 from assistant import *
-from threading import Thread
-import codecs
-import warnings
-warnings.filterwarnings("ignore")
-from gevent.pywsgi import WSGIServer
+from whatsapp import sendToNum     
+from new_apis import *
 from Provincia import API_Provincia
-import json
-from whatsapp import sendToNum                         
-from datetime import datetime
+
+#File management
 from bs4 import BeautifulSoup
+import codecs
 import re
+import json
 import logging
+from datetime import datetime
+import warnings
+warnings.filterwarnings("ignore")    
 
 #Logging configuration set to debug on history.log file
 logging.basicConfig(filename='history.log',level=logging.DEBUG)
@@ -22,13 +28,18 @@ logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S
 date = datetime.today().strftime('%Y-%m-%d')
 
 def run():
+	#Flask built in deploy for development (lazy loading)
   app.run(host='0.0.0.0',port=8081)
+
+	#WSGIServer deploy for production.
 	#WSGIServer(('', 8081), app).serve_forever()
 
+#Designated thread for server proccess
 def keep_alive():  
     t = Thread(target=run)
     t.start()
 
+#Flask app
 app = Flask(__name__)
 Mobility(app)
 
@@ -38,39 +49,47 @@ werkzeugLog.disabled = True
 requestsLog = logging.getLogger("urllib3.connectionpool")
 requestsLog.disabled = True
 
+def cacheWorkaround(file):
+	return file.read().replace('REPLACE', date)
+
+def loadPage(src):
+	return codecs.open(src, "r", "utf-8")
+
 @app.route('/')
 def main():
 	#Main endpoint corresponds to index.html website on mobile, full website on desktop
 	if request.MOBILE:
-		file = codecs.open("index.html", "r", "utf-8")
+		file = loadPage("index.html")
 	else:
-		file = codecs.open("chatbot.html", "r", "utf-8")
+		file = loadPage("chatbot.html")
 
-	return file.read().replace('REPLACE', date)
+	#Adds current date to .css and .js sources
+	try:
+		return cacheWorkaround(file)
+	except:
+		return file
 
 @app.route('/demo')
 def demo():
 	#Demo endpoint points to index.html website
-	file = codecs.open("index.html", "r", "utf-8")
+	file = loadPage("index.html")
 
-	return file.read().replace('REPLACE', date)
-
-"""
-@app.route('/info')
-def info():
-	#info endpoint points to info website
-	if request.MOBILE:
-		file = codecs.open("chatbot.html", "r", "utf-8")
-	else:	
-		file = codecs.open("chatbot.html", "r", "utf-8")
-	return file.read().replace('REPLACE', date)
-"""
+	#Adds current date to .css and .js sources for cache reloading
+	try:
+		return cacheWorkaround(file)
+	except:
+		return file
 
 @app.route('/test')
 def test():
 	#endpoint for site tests
-	file = codecs.open("test.html", "r", "utf-8")
-	return file.read().replace('REPLACE', date)
+	file = loadPage("test.html")
+
+	#Adds current date to .css and .js sources for cache reloading
+	try:
+		return cacheWorkaround(file)
+	except:
+		return file
 
 @app.route('/favicon.ico')
 def favicon():
@@ -79,7 +98,7 @@ def favicon():
 @app.route('/input', methods=['GET'])
 @app.route('/demo/input', methods=['GET'])
 def web():
-	#server input for client-watson connection
+	#server endpoint for client-watson connection
 	msg = request.args.get('msg')
 	if '\n' in msg:
 		msg = msg.replace('\n', '')
@@ -101,7 +120,7 @@ def web():
 		response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
     
 	if session_id == 0:
-		#for cero context, third party client, response is plain text.
+		#for zero context, third party client, response is plain text.
 		response = re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
 	else:
 		response =  str(response)+'|'+session_id
@@ -129,7 +148,7 @@ def siri():
 			response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
 	except:
 		response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
-	#siris responses are stripped of both html tags and urls for propper response display
+	#siri responses are stripped of both html tags and urls for propper response display
 	response = re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
 	response =  str(response)+'|'+session_id
 	logging.info('Out: '+response)
@@ -169,7 +188,7 @@ def whatsapp():
 
 	return response
 	
-#API Endpoints
+#API Endpoints (depracated) -> Migrated to mAPI Live. 
 @app.route('/api/provincias/')
 def endpoints():
 	#Returns all possible keys for API in JSON format

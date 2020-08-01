@@ -835,3 +835,20 @@ INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el 
 INFO:root:Incoming: Hola|
 INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '904e5c40-f5f7-4106-bbaf-61ef9e9792b5'}, 'skills': {'main skill': {'system': {}}}}}
 INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|904e5c40-f5f7-4106-bbaf-61ef9e9792b5
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'da26f031-6df4-41e1-b631-7d697a2f1c76'}, 'skills': {'main skill': {'system': {}}}}}
+WARNING:root:Error: name 'interpret_watson_response' is not defined
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|da26f031-6df4-41e1-b631-7d697a2f1c76
+INFO:root:Incoming: Hola|da26f031-6df4-41e1-b631-7d697a2f1c76
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'da26f031-6df4-41e1-b631-7d697a2f1c76'}, 'skills': {'main skill': {'system': {}}}}}
+WARNING:root:Error: name 'interpret_watson_response' is not defined
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|da26f031-6df4-41e1-b631-7d697a2f1c76
+INFO:root:Incoming: Hola|da26f031-6df4-41e1-b631-7d697a2f1c76
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'da26f031-6df4-41e1-b631-7d697a2f1c76'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|da26f031-6df4-41e1-b631-7d697a2f1c76
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '131b3ae4-14a9-44c9-b916-116217149aee'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|131b3ae4-14a9-44c9-b916-116217149aee
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'dd7cea0a-32c7-450e-8fdf-ba72d7462952'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|dd7cea0a-32c7-450e-8fdf-ba72d7462952

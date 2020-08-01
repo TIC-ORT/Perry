@@ -1,9 +1,10 @@
-import ssl
+#IBM Watson dependencies
 from ibm_watson import AssistantV2
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+
 #Disables https for watson calls.
+import ssl
 https_context = ssl._create_unverified_context
-from new_apis import *
 import os
 
 def sendToAssistant(textInput):
