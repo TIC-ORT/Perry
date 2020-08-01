@@ -6,9 +6,9 @@ from flask_mobility import Mobility
 import os
 
 #Apis used
-from assistant import *
+from assistant import sendToAssistant
 from whatsapp import sendToNum     
-from new_apis import *
+from new_apis import interpret_watson_response
 from Provincia import API_Provincia
 
 #File management
@@ -34,6 +34,14 @@ def run():
 	#WSGIServer deploy for production.
 	#WSGIServer(('', 8081), app).serve_forever()
 
+#Cache reloading medthod
+def cacheWorkaround(file):
+	return file.read().replace('REPLACE', date)
+
+#Open html files
+def loadPage(src):
+	return codecs.open(src, "r", "utf-8")
+
 #Designated thread for server proccess
 def keep_alive():  
     t = Thread(target=run)
@@ -48,12 +56,6 @@ werkzeugLog = logging.getLogger('werkzeug')
 werkzeugLog.disabled = True
 requestsLog = logging.getLogger("urllib3.connectionpool")
 requestsLog.disabled = True
-
-def cacheWorkaround(file):
-	return file.read().replace('REPLACE', date)
-
-def loadPage(src):
-	return codecs.open(src, "r", "utf-8")
 
 @app.route('/')
 def main():
@@ -80,20 +82,12 @@ def demo():
 	except:
 		return file
 
-@app.route('/test')
-def test():
-	#endpoint for site tests
-	file = loadPage("test.html")
-
-	#Adds current date to .css and .js sources for cache reloading
-	try:
-		return cacheWorkaround(file)
-	except:
-		return file
-
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+def removeHTML(response):
+  return re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
 
 @app.route('/input', methods=['GET'])
 @app.route('/demo/input', methods=['GET'])
@@ -121,7 +115,7 @@ def web():
     
 	if session_id == 0:
 		#for zero context, third party client, response is plain text.
-		response = re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
+		response = removeHTML(response)
 	else:
 		response =  str(response)+'|'+session_id
 	logging.info('Out: '+response)
@@ -149,7 +143,7 @@ def siri():
 	except:
 		response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
 	#siri responses are stripped of both html tags and urls for propper response display
-	response = re.sub(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", '', BeautifulSoup(response, 'html.parser').text)
+	response = removeHTML(response)
 	response =  str(response)+'|'+session_id
 	logging.info('Out: '+response)
 	return response 

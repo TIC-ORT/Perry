@@ -51,7 +51,6 @@ def sendToAssistant(textInput):
 		).get_result()
 		#Returns both Watsons response and current session_id
 		return response, session_id
-
 	
 	#session_id is created
 	session_id = assistant.create_session(

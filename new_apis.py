@@ -1,8 +1,9 @@
 from random import choice
 import requests
-from countries import natural
+#from countries import natural
+#from contacto import mensaje_contacto
+from resources import natural, mensaje_contacto
 from Provincia import API_Provincia
-from contacto import mensaje_contacto
 
 #Obtains JSON response from api url.
 def api_call(url):
