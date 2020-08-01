@@ -4,11 +4,14 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 #Disables https for watson calls.
 https_context = ssl._create_unverified_context
 from new_apis import *
+import os
 
 def sendToAssistant(textInput):
-	assistant_apiKey = '_iyBvcIwxxiX5nZ5blCqXIvH9RxdAzjs491C2zKMKd1k'
-	assistant_url = 'https://api.us-south.assistant.watson.cloud.ibm.com/instances/4b7c9dbf-8744-42f2-8601-ad43a3eb0490'
-	assistant_id = 'fe2e4610-8398-44fe-add6-0408f549e784'
+
+	assistant_apiKey = os.getenv("assistant_apiKey")
+	assistant_url = os.getenv("assistant_url")
+	assistant_id = os.getenv("assistant_id")
+
 	authenticator = IAMAuthenticator(assistant_apiKey)
 	assistant = AssistantV2(
 	    version='2020-02-05',

@@ -1,4 +1,5 @@
 from flask import Flask, request, send_from_directory
+from flask_mobility import Mobility
 import os
 from assistant import *
 from threading import Thread
@@ -29,6 +30,7 @@ def keep_alive():
     t.start()
 
 app = Flask(__name__)
+Mobility(app)
 
 #Disable unneeded dependencies logging
 werkzeugLog = logging.getLogger('werkzeug')
@@ -38,15 +40,31 @@ requestsLog.disabled = True
 
 @app.route('/')
 def main():
-	#Main endpoint corresponds to index.html website
-	file = codecs.open("index.html", "r", "utf-8")
+	#Main endpoint corresponds to index.html website on mobile, full website on desktop
+	if request.MOBILE:
+		file = codecs.open("index.html", "r", "utf-8")
+	else:
+		file = codecs.open("chatbot.html", "r", "utf-8")
+
 	return file.read().replace('REPLACE', date)
 
+@app.route('/demo')
+def demo():
+	#Demo endpoint points to index.html website
+	file = codecs.open("index.html", "r", "utf-8")
+
+	return file.read().replace('REPLACE', date)
+
+"""
 @app.route('/info')
 def info():
 	#info endpoint points to info website
-	file = codecs.open("info.html", "r", "utf-8")
+	if request.MOBILE:
+		file = codecs.open("chatbot.html", "r", "utf-8")
+	else:	
+		file = codecs.open("chatbot.html", "r", "utf-8")
 	return file.read().replace('REPLACE', date)
+"""
 
 @app.route('/test')
 def test():
@@ -54,13 +72,12 @@ def test():
 	file = codecs.open("test.html", "r", "utf-8")
 	return file.read().replace('REPLACE', date)
 
-
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
-
 @app.route('/input', methods=['GET'])
+@app.route('/demo/input', methods=['GET'])
 def web():
 	#server input for client-watson connection
 	msg = request.args.get('msg')

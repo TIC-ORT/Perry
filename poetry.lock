@@ -81,6 +81,17 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 category = "main"
+description = "A Flask extension to simplify building mobile-friendly sites."
+name = "flask-mobility"
+optional = false
+python-versions = "*"
+version = "1.0.0"
+
+[package.dependencies]
+Flask = "*"
+
+[[package]]
+category = "main"
 description = "Coroutine-based network library"
 name = "gevent"
 optional = false
@@ -335,7 +346,7 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "aa3a6ba5df4a3c9a388e3fc12ce1ffad3b2a23c45c7926570e5952c992acb198"
+content-hash = "82ea10669cd2b61d34d6de3b6947d5b9098bdaa67b694060dc1a18a4fb0ed5d5"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -392,6 +403,10 @@ click = [
 flask = [
     {file = "Flask-1.1.2-py2.py3-none-any.whl", hash = "sha256:8a4fdd8936eba2512e9c85df320a37e694c93945b33ef33c89946a340a238557"},
     {file = "Flask-1.1.2.tar.gz", hash = "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"},
+]
+flask-mobility = [
+    {file = "Flask-Mobility-1.0.0.tar.gz", hash = "sha256:4cdbbb3bb3a05dbd41908ffa070c38e0b104fb75ee5231484e6ba7dffaf27bfc"},
+    {file = "Flask_Mobility-1.0.0-py3-none-any.whl", hash = "sha256:54275aeaa6ac8dadec1fe52cec6d21271a1ff8e40c6c726141c47fa854e29e6d"},
 ]
 gevent = [
     {file = "gevent-20.6.2-cp27-cp27m-macosx_10_15_x86_64.whl", hash = "sha256:b03890bbddbae5667f5baad517417056496ff5e92c3c7945b27cc08f55a9fcb2"},

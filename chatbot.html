@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perry - COVID19</title>
+
+		<meta name="twitter:card" content="summary" />
+		<meta property="og:url" content="https://chatbot.ignaciopardo.repl.co/" />
+		<meta property="og:title" content="Perry - COVID19" />
+		<meta property="og:description" content="Perry es un asistente virtual que brinda informacion actualizada sobre el brote de coronavius en el mundo." />
+		<meta property="og:image" content="static/thumbnail.jpg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="static/floating_chatbot.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body class="scroll" style="font-family:MuseoSans;color:white;">
+	<style>
+		a:link {
+			text-decoration: none;
+			color: white;
+		}
+
+		a:visited {
+			text-decoration: none;
+			color: white;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: white;
+		}
+
+		a:active {
+			text-decoration: none;
+			color: white;
+		}
+    .navbar {
+      overflow: hidden;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+      background-color:#0C043F;
+    }
+    .corner-wrapper {
+      width: 652px;
+      height: 980px;
+      overflow: hidden;
+			position:absolute;
+			right: 0;
+			bottom:-790px;
+    }
+	html, body {
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding:0;
+      background-color:#0C043F;
+		}
+  .fill {
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      //background-image: url('/static/background_darkened.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }  
+	</style>
+  <!-- BARRA DE ARRIBA -->
+    <div class="navbar" style="z-index:2000;width:100%; height:10%;">
+			<a href="/"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:50px; float:left;margin-top:20px; "><b>Perry</b> Asistente Virtual</p></a>
+      <a href="https://campus.belgrano.ort.edu.ar/tic/ticlab"><img src="static/ticlab_blanco.svg" style="float:right; height: 50px; margin:15px;margin-right:50px "></a>      
+      <a href="#franja_contacto"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:20px; float:right">Contacto</p></a>
+      <a href="#franja_chatbot"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:50px; margin-top:20px; float:right">Información</p></a>
+      <a href="#franja_hola"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:50px; margin-top:20px; float:right">Chatbot</p></a>
+      </div>
+
+  <!-- INICIO -->
+			<a id="franja_hola"></a>
+      <div class="fill" style="width:100%; height:100%;">
+            <div class="spacer" style="width:100%; height:30%;"></div>
+            
+            <img src="static/wave4.svg" style="width:100%; position:absolute; bottom:0; float:right"></img>
+            <img src="static/perry.svg" style="width:50%; z-index:1001;position:absolute;top:150px"> 
+              <p style="font-family:MuseoSans;font-size:30px;text-align:left;color:white;top: 200px;margin-left:55%;margin-top:0px;position: absolute;"><b>¿Tenes preguntas sobre el COVID-19?</b><br><br>👉 ¿Cuáles son los síntomas? <br>👉 ¿Qué debo hacer si tengo síntomas? <br> 👉 ¿Cuántas personas contagiadas hay? <br> 👉 ¿Cuántas personas se han curado?<br>👉 ¡Y muchas más!
+              </p>
+            </div>
+            <div data-aos="zoom-in" style="width:100%;z-index:1000;position:relative;">
+              <div class="corner-wrapper"><img src="static/iphone.svg" style="width:80%"></img></div>
+            </div>
+          
+        </div>
+		  
+      <div class="fill2" style="border-top: 5px solid white;width:100%; height:65%;background-color:white;background:white">
+        <div style="background:whitewidth:100%; height:80%;"></div>
+      </div>
+			<a id="franja_chatbot"></a>
+			<div style="background:white;width:100%; height:10%;"></div>
+      <div style="position:relative;background:#F2674A; width:100%; height:85%;">
+			<div style="width:60%;height:100%;">
+				<div style="width:100%;height:15px;"></div>
+				<table style="width:100%;height:100%;">
+					<tr style="font-size:80px;">
+						<p style="margin:0px;margin-left:50px;padding:0px;font-size:80px;">Hola, soy Perry 👋</p>
+					</tr>	
+					<tr>
+						<p style="margin:0px;margin-left:50px;padding:0px;margin-top:14px;font-size:22px;">Los contenidos de este chatbot se han redactado solo con <b>fines informativos</b> utilizando fuentes contrastadas, acreditadas y científicas. En ningún momento pueden servir para facilitar diagnósticos o sustituir la labor de un profesional.</p>
+					</tr>	
+							<p style="margin:0px;margin-left:50px;padding:0px;margin-top:45px;font-size:22px;">Podes preguntarme lo que necesites desde esta misma página en la esquina inferior derecha. ¡También podes instalarme en tu celular!</p>
+					</tr>
+					<div style="width:100%;padding:0px;">
+						<tr>
+							<div style="margin-left:50px;width:100%;">
+								<a href="https://api.whatsapp.com/send?phone=14155238886&text=join%20obtain-built">
+								<img style="display:inline-block;vertical-align:bottom;margin:20px;" src="static/wpp_icon.svg">
+								</a>
+								<a href="https://www.icloud.com/shortcuts/fe1c031dcf724001983aed6a9fb2fd97">
+								<img style="display:inline-block;vertical-align:bottom;margin:20px;" src="static/siri_icon.svg">
+								</a>
+								<a href="">
+								<img style="display:inline-block;vertical-align:bottom;margin:20px;" src="static/home_icon.svg">
+								</a>
+							</div>
+							<div style="margin-left:50px;width: 60%;bottom: 30px;position: absolute;">
+								<a href="https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data">
+								<img style="vertical-align:middle;margin:15px;width:20%" src="static/Wikipedia.svg">
+								</a>
+								<a href="https://www.jhu.edu/">
+								<img style="vertical-align:middle;margin:15px;width:20%" src="static/JHU.svg">
+								</a>
+								<a href="https://covidtracking.com/">
+								<img style="vertical-align:middle;margin:15px;width:20%" src="static/TCTP.svg">
+								</a>
+								<a href="https://argentina.gob.ar">
+								<img style="vertical-align:middle;margin:15px;width:20%" src="static/Arg.svg">
+								</a>
+							</div>
+						</tr>	
+					</div>
+				</table>
+			</div>
+			<div class="chatContainer" id="chatbot">
+				<div class="header">
+					<button type="button" onclick="closeChatbot()" class="headerClose">
+						<center>
+							<img style="width:100%; height: 100%;"  src="static/header.svg">
+						</center>
+					</button>
+				</div>
+				<div class="msgsContainer scroll">
+					<ul id="messages">
+						<div class="botMessage">
+							👋 ¡Hola! Soy un Asistente Virtual.
+						</div>
+						<div class="divider"></div>
+						<div class="botMessage">
+							Podes consultarme sobre el <b>actual brote de coronavirus</b> 🦠
+						</div>
+						<div class="divider"></div>
+					</ul>
+				</div>
+				<input id="usrMessageInput" class="msgInput" name="msg" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" inputmode="search"/>
+				<button onclick="send()" class="sendBtn"> Enviar </button>
+			</div>
+			<button type="button" onclick="openChatbot()" class="chatbot_floating_button" id="chatbot_floating_button">
+				<img width="100%" height="100%" src="static/btnChatbot.svg">
+			</button>
+			<script type="text/javascript" src="static/floating_chatbot.js"></script>
+			<script type="text/javascript" src="static/chatbot.js"></script>
+		</div>
+		<div style="position:relative;background:#0C043F; height:65%;">
+			<a id="franja_contacto"></a>
+			<div style="margin:50px;width:50%; margin-top:20px;">
+				<table>
+					<tr>
+						<p style="padding:0px;margin:0px;font-size:50px;">Contacto</p>
+					</tr>
+					<tr>
+						<p style="padding:0px;margin:0px;margin-top:30px;margin-bottom:10px;font-size:20px;">Si queres contactarte con nosotros para hablar sobre fuentes de datos, difusión en los medios o sugerencias:</p>
+					</tr>
+				</table>
+			</div>
+			<div style="margin:50px;margin-top:20px;width:50%">
+				<table>
+					<tr>
+						<td>
+							<a href="">
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/tw.svg">@ticlab</p>
+							</a>
+						</td>
+						<td>
+							<a href="mailto:ticlab@ort.edu.ar">
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/mail.svg"> ticlab@ort.edu.ar</p>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://twitter.com/luuparrondo">
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/tw.svg">@luuparrondo</p>
+							</a>
+							
+						</td>
+						<td>
+							<a href="mailto:lucia.parrondo@ort.edu.ar">
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/mail.svg"> lucia.parrondo@ort.edu.ar</p>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://twitter.com/Chona_Pardo">
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/tw.svg">@chona_pardo</p>
+							</a>
+						</td>
+						<td>
+							<a href="mailto:ignacio.pardo@ort.edu.ar">
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/mail.svg"> ignacio.pardo@ort.edu.ar</p>
+							</a>
+						</td>
+					</tr>
+				</table>
+				<a href="www.mapi.live/about">
+					<img style="position:absolute;bottom:50px; left:60px;width:160px;" src="static/powered.svg">
+				</a>
+				<a href="https://www.ibm.com/ar-es/cloud/public">
+					<img style="position:absolute;bottom:53px; left:240px; width:160px" src="static/ibm.svg">
+				</a>
+				<a href="">
+					<img style="position:absolute;bottom:53px; left:420px;width:160px;" src="static/mAPI.svg">
+				</a>
+				<a href="https:/ort.edu.ar/">
+					<img style="position:absolute;bottom:60px; right:180px; width:180px" src="static/info/ORT.svg">
+				</a>
+				<a href="https://campus.belgrano.ort.edu.ar/tic">
+					<img style="position:absolute;bottom:69px; right:60px;width:100px;" src="static/info/TICX.svg">
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
