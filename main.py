@@ -29,10 +29,10 @@ date = datetime.today().strftime('%Y-%m-%d')
 
 def run():
 	#Flask built in deploy for development (lazy loading)
-  app.run(host='0.0.0.0',port=8081)
+  #app.run(host='0.0.0.0',port=8081)
 
 	#WSGIServer deploy for production.
-	#WSGIServer(('', 8081), app).serve_forever()
+	WSGIServer(('', 8081), app).serve_forever()
 
 #Cache reloading medthod
 def cacheWorkaround(file):
