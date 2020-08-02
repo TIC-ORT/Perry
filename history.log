@@ -882,3 +882,8 @@ INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence':
 WARNING:root:Error: 'text'
 INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|b4467ee4-d021-4c3b-9646-535ceb18f3a5
 INFO:root:Incoming: Hola|
+INFO:root:Incoming: Hola|
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '9826aff6-d1a7-47fc-b611-c7fc09ca2847'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|9826aff6-d1a7-47fc-b611-c7fc09ca2847
