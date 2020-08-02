@@ -9,13 +9,11 @@ import os
 from assistant import sendToAssistant
 from whatsapp import sendToNum
 from new_apis import interpret_watson_response
-from Provincia import API_Provincia
 
 #File management
 from bs4 import BeautifulSoup
 import codecs
 import re
-import json
 import logging
 from datetime import datetime
 import warnings
@@ -200,42 +198,6 @@ def whatsapp():
             sendToNum(text=response, num=user_num)
 
     return response
-
-
-#API Endpoints (depracated) -> Migrated to mAPI Live.
-@app.route('/api/provincias/')
-def endpoints():
-    #Returns all possible keys for API in JSON format
-    api = API_Provincia()
-    api.loadAllData()
-    jsonOutput = {
-        "status": "success",
-        'data': {
-            'Provincias': list(api.data.keys())
-        }
-    }
-    return json.dumps(jsonOutput, ensure_ascii=False)
-
-
-@app.route('/api/provincia/<string:prov>/<string:info>/', methods=['GET'])
-@app.route('/api/provincia/<string:prov>/', methods=['GET'])
-def api(prov=None, info=None):
-    #Returns requested data from selected provinces.
-    api = API_Provincia(prov)
-    if info is None:
-        jsonOutput = {"status": "success", 'data': {prov: api.get()}}
-        return json.dumps(jsonOutput, ensure_ascii=False)
-
-    number = api.get(info)
-    jsonOutput = {
-        "status": "success",
-        'data': {
-            'Provincia': prov,
-            info: int(number.replace(',', ''))
-        }
-    }
-    return json.dumps(jsonOutput, ensure_ascii=False)
-
 
 if __name__ == '__main__':
     keep_alive()

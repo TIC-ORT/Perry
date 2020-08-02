@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "chatbot"
+name = "Perry"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["TICLAB <ticlab@ort.edu.ar>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

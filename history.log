@@ -887,3 +887,6 @@ INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrase
 INFO:root:Incoming: Hola|
 INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '9826aff6-d1a7-47fc-b611-c7fc09ca2847'}, 'skills': {'main skill': {'system': {}}}}}
 INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|9826aff6-d1a7-47fc-b611-c7fc09ca2847
+INFO:root:Incoming: jaja|
+INFO:root:Watson: {'output': {'intents': [], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'No entendí el significado... 🤔 ¿Me lo podes repetir con otras palabras?'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '098693d7-eba1-49d1-b5c3-6fc56d89cb90'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: No entendí el significado... 🤔 ¿Me lo podes repetir con otras palabras?|098693d7-eba1-49d1-b5c3-6fc56d89cb90
