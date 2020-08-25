@@ -7,8 +7,8 @@ import difflib
 class API_Provincia:
 	
 	correciones = {
-		'Buenos Aires Autonomous City': 'la Ciudad Autonoma de Buenos Aires',
-		'Buenos Aires Province': 'Buenos Aires'
+		'Buenos Aires C': 'la Ciudad Autonoma de Buenos Aires',
+		'Buenos Aires P': 'Buenos Aires'
 	}
 
 	data = {}
@@ -54,7 +54,7 @@ class API_Provincia:
 			for tr in table.find_all('tr'):
 				row = [''.join(cell.stripped_strings) for cell in tr.find_all(['td', 'th'])]
 				resultados.append(row[1:])
-		resultados = resultados[1:]
+		#resultados = resultados[1:]
 
 		for row in resultados:
 			provKey = row[0].replace(' ', '-').replace('(', '').replace(')', '')

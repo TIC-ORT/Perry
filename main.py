@@ -26,7 +26,6 @@ logging.basicConfig(
 
 date = datetime.today().strftime('%Y-%m-%d')
 
-
 def run():
     #Flask built in deploy for development (lazy loading)
     #app.run(host='0.0.0.0',port=8081)
@@ -67,6 +66,20 @@ def main():
     #Main endpoint corresponds to index.html website on mobile, full website on desktop
     if request.MOBILE:
         file = loadPage("index.html")
+    else:
+        file = loadPage("chatbot.html")
+
+    #Adds current date to .css and .js sources
+    try:
+        return cacheWorkaround(file)
+    except:
+        return file
+
+@app.route('/info')
+def info():
+    #Info endpoint corresponds to info.html website on mobile, full website on desktop
+    if request.MOBILE:
+        file = loadPage("info.html")
     else:
         file = loadPage("chatbot.html")
 
