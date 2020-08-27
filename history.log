@@ -6685,3 +6685,63 @@ Traceback (most recent call last):
   File "/home/runner/Perry/new_apis.py", line 212, in interpret_watson_response
     text = resp['output']['generic'][0]['text']
 KeyError: 'text'
+INFO:root:Incoming: Hola Perry|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'dc38c7b4-3bca-419c-aeba-4f8c7a189f58'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|dc38c7b4-3bca-419c-aeba-4f8c7a189f58
+ERROR:main:Exception on /info [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 85, in info
+    return redirect(url_for('/'))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint '/'. Did you mean 'web' instead?
+ERROR:main:Exception on /info [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 85, in info
+    return redirect(url_for('/'))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint '/'. Did you mean 'web' instead?
+INFO:root:Incoming: Hola perry|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'dec7a807-da6e-49e7-bf75-0363c1e445a0'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|dec7a807-da6e-49e7-bf75-0363c1e445a0

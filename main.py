@@ -1,7 +1,7 @@
 #Server dependencies
 from gevent.pywsgi import WSGIServer
 from threading import Thread
-from flask import Flask, request, send_from_directory
+from flask import Flask, request, send_from_directory, redirect
 from flask_mobility import Mobility
 import os
 
@@ -34,7 +34,7 @@ def run():
     WSGIServer(('', 8081), app).serve_forever()
 
 
-#Cache reloading medthod
+#Force cache reload on client
 def cacheWorkaround(file):
     return file.read().replace('REPLACE', date)
 
@@ -81,7 +81,8 @@ def info():
     if request.MOBILE:
         file = loadPage("info.html")
     else:
-        file = loadPage("chatbot.html")
+        #file = loadPage("chatbot.html")
+        return redirect('/')
 
     #Adds current date to .css and .js sources
     try:
