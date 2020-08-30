@@ -6745,3 +6745,31 @@ werkzeug.routing.BuildError: Could not build url for endpoint '/'. Did you mean 
 INFO:root:Incoming: Hola perry|
 INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'dec7a807-da6e-49e7-bf75-0363c1e445a0'}, 'skills': {'main skill': {'system': {}}}}}
 INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|dec7a807-da6e-49e7-bf75-0363c1e445a0
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491123817788', 'From': 'whatsapp:+14155238886', 'Body': 'El numero de infectados a nivel global es 25.051.178.', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SMef4414be5afa4fca96fafaa734797e95", "date_created": "Sun, 30 Aug 2020 18:13:29 +0000", "date_updated": "Sun, 30 Aug 2020 18:13:29 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491123817788", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "El numero de infectados a nivel global es 25.051.178.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMef4414be5afa4fca96fafaa734797e95.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMef4414be5afa4fca96fafaa734797e95/Media.json"}}
+ERROR:main:Exception on /whatsapp [POST]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 193, in whatsapp
+    response = interpret_watson_response(response)
+  File "/home/runner/Perry/new_apis.py", line 227, in interpret_watson_response
+    intent = resp["context"]["skills"]["main skill"]["user_defined"]['intencion']
+KeyError: 'intencion'
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491123817788', 'From': 'whatsapp:+14155238886', 'Body': 'El numero de infectados en Argentina es de 401.226.', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SMf9feab9f26434c048c1dff8e1fe14bfa", "date_created": "Sun, 30 Aug 2020 21:40:16 +0000", "date_updated": "Sun, 30 Aug 2020 21:40:16 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491123817788", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "El numero de infectados en Argentina es de 401.226.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMf9feab9f26434c048c1dff8e1fe14bfa.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMf9feab9f26434c048c1dff8e1fe14bfa/Media.json"}}
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
+INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491123817788', 'From': 'whatsapp:+14155238886', 'Body': 'El numero de fallecidos en Argentina es de 8.353.', 'MediaUrl': None}
+INFO:twilio.http_client:POST Response: 201 {"sid": "SMe66998b40566436481cdade4169e0114", "date_created": "Sun, 30 Aug 2020 21:40:49 +0000", "date_updated": "Sun, 30 Aug 2020 21:40:49 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491123817788", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "El numero de fallecidos en Argentina es de 8.353.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMe66998b40566436481cdade4169e0114.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMe66998b40566436481cdade4169e0114/Media.json"}}
