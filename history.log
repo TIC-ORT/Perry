@@ -6773,3 +6773,46 @@ INFO:twilio.http_client:POST Response: 201 {"sid": "SMf9feab9f26434c048c1dff8e1f
 INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages.json
 INFO:twilio.http_client:PAYLOAD: {'To': 'whatsapp:+5491123817788', 'From': 'whatsapp:+14155238886', 'Body': 'El numero de fallecidos en Argentina es de 8.353.', 'MediaUrl': None}
 INFO:twilio.http_client:POST Response: 201 {"sid": "SMe66998b40566436481cdade4169e0114", "date_created": "Sun, 30 Aug 2020 21:40:49 +0000", "date_updated": "Sun, 30 Aug 2020 21:40:49 +0000", "date_sent": null, "account_sid": "AC740bb3cfc9eb3057a0e2ecc8a5bf4102", "to": "whatsapp:+5491123817788", "from": "whatsapp:+14155238886", "messaging_service_sid": null, "body": "El numero de fallecidos en Argentina es de 8.353.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": null, "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMe66998b40566436481cdade4169e0114.json", "subresource_uris": {"media": "/2010-04-01/Accounts/AC740bb3cfc9eb3057a0e2ecc8a5bf4102/Messages/SMe66998b40566436481cdade4169e0114/Media.json"}}
+INFO:root:Incoming: cuantos infectados hay en china|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 4}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 6}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 7}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 8}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 9}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 10}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 11}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+WARNING:root:Error: invalid literal for int() with base 10: '57[al]'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 12}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en China es de 85.058.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716

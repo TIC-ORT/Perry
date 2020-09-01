@@ -34,7 +34,6 @@ class Globales:
 		noise = soup.find('caption')
 		noise.decompose()
 
-
 		noise = soup.find_all('td', attrs={'style':'padding:0px 2px;'})
 		for td in noise:
 			td.decompose()
@@ -62,7 +61,6 @@ class Globales:
 							}
 
 		rows = rows[2:]
-
 		for row in rows:
 			country = row.find_all('th')[1].text.replace('\n', '')
 			if '[' in country:
@@ -81,6 +79,9 @@ class Globales:
 					done = True
 				if ',' in res[i]:
 					res[i] = res[i].replace(',', '.')
+				if '[' in res[i]:
+					res[i] = res[i].split("[")[0]
+
 			if not done:
 				done = False
 				cases, deaths, recov = res
@@ -93,6 +94,7 @@ class Globales:
 										'recuperados':recov,
 										'activos': active
 									}
+
 	def getCountry(self, country):
 		self.load()
 		return self.results[country]
