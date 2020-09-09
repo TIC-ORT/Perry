@@ -6816,3 +6816,9 @@ INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrase
 INFO:root:Incoming: cuantos infectados hay en china‎‎‎‎|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
 INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9828073978424072}], 'entities': [{'entity': 'pais', 'location': [26, 31], 'value': 'china', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 12}, 'session_id': 'a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
 INFO:root:Out: El numero de infectados en China es de 85.058.|a2cb8c19-ba68-4a19-a5fb-edf9dfb3d716
+INFO:root:Incoming-SIRI: Cuantos fallecidos hay en chubut?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.866054105758667}], 'entities': [{'entity': 'provincia', 'location': [26, 32], 'value': 'Chubut', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'b4967e18-4861-4475-93c5-6f4ccab52392'}, 'skills': {'main skill': {'user_defined': {'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: El numero de fallecidos en Chubut es de 11.|b4967e18-4861-4475-93c5-6f4ccab52392
+INFO:root:Incoming-SIRI: Cuantos fallecidos hay en chubut?|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'fallecidos', 'confidence': 0.866054105758667}], 'entities': [{'entity': 'provincia', 'location': [26, 32], 'value': 'Chubut', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '6e578a96-8bfe-42ca-8f18-f059ed54ab9d'}, 'skills': {'main skill': {'user_defined': {'intencion': 'fallecidos'}, 'system': {}}}}}
+INFO:root:Out: El numero de fallecidos en Chubut es de 11.|6e578a96-8bfe-42ca-8f18-f059ed54ab9d
