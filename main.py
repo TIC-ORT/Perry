@@ -1,7 +1,7 @@
 #Server dependencies
 from gevent.pywsgi import WSGIServer
 from threading import Thread
-from flask import Flask, request, send_from_directory, redirect
+from flask import Flask, request, send_from_directory, redirect, Response
 from flask_mobility import Mobility
 import os
 
@@ -166,7 +166,7 @@ def siri():
         try:
             #Interprets watson response, decides whether or not API calls are needed.
             response = interpret_watson_response(response)
-            print(response)
+        
         except Exception as e:
             logging.warning('Error: ' + str(e))
             response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
@@ -174,10 +174,16 @@ def siri():
         response = "Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo."
     #siri responses are stripped of both html tags and urls for propper response display
     response = removeHTML(response)
-    response = str(response) + '|' + session_id
+    response = str(response) + '|' + str(session_id)
     logging.info('Out: ' + response)
+    print(response)
     return response
 
+@app.route('/siri', methods=['HEAD'])
+def siri_head():
+    response = Response()
+    response.headers.add('content-length', "Perry")
+    return response
 
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp():
