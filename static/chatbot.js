@@ -33,6 +33,7 @@ input.addEventListener("keyup", function(event) {
 });
 
 function send(){
+	//document.querySelector('label').parentElement.removeChild(document.querySelector('label'))
 	var check = document.getElementById('usrMessageInput').value;
 	if (check === 'export'){
 		downloadInnerHtml();

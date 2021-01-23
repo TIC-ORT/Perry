@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "MuseoSans";
 	src: url("MuseoSans-300.otf");
+	font-display: swap;
 }
 
 a:link {
@@ -124,6 +125,12 @@ textarea, select, input, button { outline: none; }
 	margin-top: 0px;
 }
 ul{
+	font-family: MuseoSans;
+	font-size:112.5%;
+	list-style-type: none;
+	padding-left: 20px;
+}
+.fake_ul{
 	font-family: MuseoSans;
 	font-size:112.5%;
 	list-style-type: none;

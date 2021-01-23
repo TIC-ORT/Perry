@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>Perry - COVID19</title>
 
@@ -8,11 +8,13 @@
 		<meta property="og:title" content="Perry - COVID19" />
 		<meta property="og:description" content="Perry es un asistente virtual que brinda informacion actualizada sobre el brote de coronavius en el mundo." />
 		<meta property="og:image" content="static/thumbnail.jpg" />
-
+		<meta name="Description" content="Perry es un asistente virtual que brinda informacion actualizada sobre el brote de coronavius en el mundo.">
+		<meta name="theme-color" content="#0C043F"/>	
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="preload" href="/static/MuseoSans-300.otf" as="font" type="font/otf" crossorigin>
 		<link href="static/floating_chatbot.css" rel="stylesheet" type="text/css">
-
+		<link rel="manifest" href="static/manifest.json">
   </head>
   <body class="scroll" style="font-family:MuseoSans;color:white;">
 	<style>
@@ -70,7 +72,7 @@
   <!-- BARRA DE ARRIBA -->
     <div class="navbar" style="z-index:2000;width:100%; ">
 			<a href="/"><p style="font-family:MuseoSans;color:white;font-size:25px; margin-left:20px;float:left;margin-top:20px; "><b>Perry</b> Asistente Virtual</p></a>
-      <a href="https://campus.belgrano.ort.edu.ar/tic/ticlab"><img src="static/ticlab_blanco.svg" style="float:right; height: 50px; margin:15px;margin-right:50px "></a>      
+      <a href="https://campus.belgrano.ort.edu.ar/tic/ticlab"><img alt="TIC LAB" src="static/ticlab_blanco.svg" style="float:right; height: 50px; margin:15px;margin-right:50px "></a>      
       <a href="#franja_contacto"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:20px; float:right">Contacto</p></a>
       <a href="#franja_chatbot"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:50px;margin-bottom:20px; margin-top:20px; float:right">Información</p></a>
       <a href="/demo"><p style="font-family:MuseoSans;color:white;font-size:25px;margin:50px;margin-bottom:20px; margin-top:20px; float:right">Chatbot</p></a>
@@ -81,13 +83,13 @@
       <div class="fill" style="width:100%; height:100%;">
             <div class="spacer" style="width:100%; height:30%;"></div>
             
-            <img src="static/wave4.svg" style="width:100%; position:absolute; bottom:0; float:right"></img>
-            <img src="static/perry.svg" style="width:50%; z-index:1001;position:absolute;top:150px"> 
+            <img alt="Wave" src="static/wave4.svg" style="width:100%; position:absolute; bottom:0; float:right"></img>
+            <img alt="Perry" src="static/perry.svg" style="width:50%; z-index:1001;position:absolute;top:150px"> 
               <p style="font-family:MuseoSans;font-size:30px;text-align:left;color:white;top: 200px;margin-left:55%;margin-top:0px;position: absolute;"><b>¿Tenes preguntas sobre el COVID-19?</b><br><br>👉 ¿Cuáles son los síntomas? <br>👉 ¿Qué debo hacer si tengo síntomas? <br> 👉 ¿Cuántas personas contagiadas hay? <br> 👉 ¿Cuántas personas se han curado?<br>👉 ¡Y muchas más!
               </p>
             </div>
             <div data-aos="zoom-in" style="width:100%;z-index:1000;position:relative;">
-              <div class="corner-wrapper"><img src="static/iphone.svg" style="width:80%"></img></div>
+              <div class="corner-wrapper"><img alt="Device" src="static/iphone.svg" style="width:80%"></img></div>
             </div>
           
         </div>
@@ -113,27 +115,27 @@
 						<tr>
 							<div style="margin-left:50px;width:100%;margin-bottom:2%; margin-top:2%;">
 								<a href="https://api.whatsapp.com/send?phone=14155238886&text=join%20obtain-built">
-								<img style="display:inline-block;vertical-align:bottom;margin:20px;width:10%;" src="static/wpp_icon.svg">
+								<img alt="Whatsapp Icon" style="display:inline-block;vertical-align:bottom;margin:20px;width:10%;" src="static/wpp_icon.svg">
 								</a>
-								<a href="https://www.icloud.com/shortcuts/5cf788c0cedf4cabab3cb65e27b65725">
-								<img style="display:inline-block;vertical-align:bottom;margin:20px;width:10%;" src="static/siri_icon.svg">
+								<a href="https://www.icloud.com/shortcuts/4a7b3dbe90ea4353a56c37c6be101e58">
+								<img alt="Apple Siri icon" style="display:inline-block;vertical-align:bottom;margin:20px;width:10%;" src="static/siri_icon.svg">
 								</a>
 								<a href="https://Perry.ticlab.repl.co/static/Perry.mobileconfig">
-								<img style="display:inline-block;vertical-align:bottom;margin:20px;width:10%;" src="static/home_icon.svg">
+								<img alt="Home icon" style="display:inline-block;vertical-align:bottom;margin:20px;width:10%;" src="static/home_icon.svg">
 								</a>
 							</div>
 							<div style="margin-left:50px;width: 120%;">
 								<a href="https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data">
-								<img style="vertical-align:middle;margin:15px;width:20%" src="static/Wikipedia.svg">
+								<img alt="Powered by Wikipedia" style="vertical-align:middle;margin:15px;width:20%" src="static/Wikipedia.svg">
 								</a>
 								<a href="https://www.jhu.edu/">
-								<img style="vertical-align:middle;margin:15px;width:20%" src="static/JHU.svg">
+								<img alt="Powered by JHU" style="vertical-align:middle;margin:15px;width:20%" src="static/JHU.svg">
 								</a>
 								<a href="https://covidtracking.com/">
-								<img style="vertical-align:middle;margin:15px;width:20%" src="static/TCTP.svg">
+								<img alt="Powered by TCTP" style="vertical-align:middle;margin:15px;width:20%" src="static/TCTP.svg">
 								</a>
 								<a href="https://argentina.gob.ar">
-								<img style="vertical-align:middle;margin:15px;width:20%" src="static/Arg.svg">
+								<img alt="Powered by Argentina Ministerio de Salud" style="vertical-align:middle;margin:15px;width:20%" src="static/Arg.svg">
 								</a>
 							</div>
 						</tr>	
@@ -144,12 +146,13 @@
 				<div class="header">
 					<button type="button" onclick="closeChatbot()" class="headerClose">
 						<center>
-							<img style="width:100%; height: 100%;"  src="static/header.svg">
+							<img alt="Header" style="width:100%; height: 100%;"  src="static/header.svg">
 						</center>
 					</button>
 				</div>
 				<div class="msgsContainer scroll">
-					<ul id="messages">
+					<label for="usrMessageInput"> </label>
+					<div class="fake_ul" id="messages">
 						<div class="botMessage">
 							👋 ¡Hola! Soy un Asistente Virtual.
 						</div>
@@ -164,7 +167,7 @@
 				<button onclick="send()" class="sendBtn"> Enviar </button>
 			</div>
 			<button type="button" onclick="openChatbot()" class="chatbot_floating_button" id="chatbot_floating_button">
-				<img width="100%" height="100%" src="static/btnChatbot.svg">
+				<img alt="Boton Chatbot" width="100%" height="100%" src="static/btnChatbot.svg">
 			</button>
 			<script type="text/javascript" src="static/floating_chatbot.js"></script>
 			<script type="text/javascript" src="static/chatbot.js"></script>
@@ -186,59 +189,64 @@
 					<tr>
 						<td>
 							<a href="">
-							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/tw.svg">@ticlab</p>
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img alt="Twitter icon @tic lab" style="width:28px" src="static/tw.svg">@ticlab</p>
 							</a>
 						</td>
 						<td>
 							<a href="mailto:ticlab.ort@gmai.com">
-							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/mail.svg"> ticlab.ort@gmail.com</p>
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img alt="Mail icon tic lab" style="width:28px" src="static/mail.svg"> ticlab.ort@gmail.com</p>
 							</a>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<a href="https://twitter.com/luuparrondo">
-							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/tw.svg">@luuparrondo</p>
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img alt="Twitter icon Luu Parrondo" style="width:28px" src="static/tw.svg">@luuparrondo</p>
 							</a>
 							
 						</td>
 						<td>
 							<a href="mailto:lucia.parrondo@ort.edu.ar">
-							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/mail.svg"> lucia.parrondo@ort.edu.ar</p>
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img alt="Mail icon Lucia Parrondo" style="width:28px" src="static/mail.svg"> lucia.parrondo@ort.edu.ar</p>
 							</a>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<a href="https://twitter.com/Chona_Pardo">
-							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/tw.svg">@chona_pardo</p>
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img alt="Twitter icon chona pardo" style="width:28px" src="static/tw.svg">@chona_pardo</p>
 							</a>
 						</td>
 						<td>
 							<a href="mailto:ignacio.pardo@ort.edu.ar">
-							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img style="width:28px" src="static/mail.svg"> ignacio.pardo@ort.edu.ar</p>
+							<p style="padding:0px;margin:0px;margin-top:10px;margin-right:20px;font-size:20px;"><img alt="Mail icon Ignacio Pardo" style="width:28px" src="static/mail.svg"> ignacio.pardo@ort.edu.ar</p>
 							</a>
 						</td>
 					</tr>
 				</table>
 				<div style="position:relative;margin-top:50px">
 				<a href="www.mapi.live/about">
-					<img style="margin-right:10px;width:160px;" src="static/powered.svg">
+					<img alt="Powered By label" style="margin-right:10px;width:160px;" src="static/powered.svg">
 				</a>
 				<a href="https://www.ibm.com/ar-es/cloud/public">
-					<img style="margin-right:20px;width:160px" src="static/ibm.svg">
+					<img alt="Powered by IBM" style="margin-right:20px;width:160px" src="static/ibm.svg">
 				</a>
 				<a href="">
-					<img style="margin-right:20px;width:160px;" src="static/mAPI.svg">
+					<img alt="Powered by mAPI" style="margin-right:20px;width:160px;" src="static/mAPI.svg">
 				</a>
 				</div>
 				<a href="https://ort.edu.ar/">
-					<img style="position:absolute;bottom:10px; right:180px;width:180px" src="static/info/ORT.svg">
+					<img alt="ORT Icon" style="position:absolute;bottom:10px; right:180px;width:180px" src="static/info/ORT.svg">
 				</a>
 				<a href="https://campus.belgrano.ort.edu.ar/tic">
-					<img style="position:absolute;bottom:19px; right:60px;width:100px;" src="static/info/TICX.svg">
+					<img alt="TIC X icon" style="position:absolute;bottom:19px; right:60px;width:100px;" src="static/info/TICX.svg">
 				</a>
 			</div>
 		</div>
+		<script>
+			if ('serviceWorker' in navigator){
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+		</script>
 	</body>
 </html>

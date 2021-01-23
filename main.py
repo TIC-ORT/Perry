@@ -3,7 +3,9 @@ from gevent.pywsgi import WSGIServer
 from threading import Thread
 from flask import Flask, request, send_from_directory, redirect, Response
 from flask_mobility import Mobility
+from flask_talisman import Talisman
 import os
+from usage import *
 
 #Apis used
 from assistant import sendToAssistant
@@ -53,13 +55,13 @@ def keep_alive():
 #Flask app
 app = Flask(__name__)
 Mobility(app)
+Talisman(app, content_security_policy=None)
 
 #Disable unneeded dependencies logging
 werkzeugLog = logging.getLogger('werkzeug')
 werkzeugLog.disabled = True
 requestsLog = logging.getLogger("urllib3.connectionpool")
 requestsLog.disabled = True
-
 
 @app.route('/')
 def main():
@@ -74,6 +76,10 @@ def main():
         return cacheWorkaround(file)
     except:
         return file
+
+@app.route('/stats')
+def stats():
+	return html_stats(request.MOBILE)
 
 @app.route('/info')
 def info():
@@ -109,6 +115,13 @@ def favicon():
         os.path.join(app.root_path, 'static'),
         'favicon.ico',
         mimetype='image/vnd.microsoft.icon')
+
+@app.route('/service-worker.js')
+def service_worker():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'service-worker.js',
+        mimetype='application/javascript')
 
 
 def removeHTML(response):
@@ -151,6 +164,7 @@ def web():
     return response
 
 
+@app.route('/siri', methods=['HEAD'])
 @app.route('/siri', methods=['GET'])
 def siri():
     #endpoint for siri shortcut
@@ -179,11 +193,13 @@ def siri():
     print(response)
     return response
 
+"""
 @app.route('/siri', methods=['HEAD'])
 def siri_head():
     response = Response()
     response.headers.add('content-length', "Perry")
     return response
+"""
 
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp():

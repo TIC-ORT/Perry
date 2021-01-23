@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
-
 		<meta name="twitter:card" content="summary" />
 		<meta property="og:url" content="https://perry.ticlab.repl.co/" />
 		<meta property="og:title" content="Perry - COVID19" />
 		<meta property="og:description" content="Perry es un asistente virtual que brinda informacion actualizada sobre el brote de coronavius en el mundo." />
 		<meta property="og:image" content="static/thumbnail.jpg" />
-
+		<meta name="Description" content="Perry es un asistente virtual que brinda informacion actualizada sobre el brote de coronavius en el mundo.">
+		<meta name="theme-color" content="#0C043F"/>	
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover,  shrink-to-fit=no" />
+		<!--<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />-->
 		<meta name="HandheldFriendly" content="true"> 
+		<link rel="preload" href="/static/MuseoSans-300.otf" as="font" type="font/otf" crossorigin>
 		<link rel="stylesheet" type="text/css" href="static/style.css?REPLACE">
+		<link rel="manifest" href="static/manifest.json">
 		<meta http-equiv="Cache-control" content="no-cache">
 		<meta http-equiv="Expires" content="-1">
 		<!-- for ios 7 style, multi-resolution icon of 152x152 -->
@@ -27,16 +30,18 @@
 		<title>Perry</title>
 	</head>
 	<body>
+		<a class="skip-link" href="#maincontent">⠀</a>
 		<div class="chatContainer centered" id="chat">
 			<a href="/info">
 				<div class="header" style="position:sticky; position:-webkit-sticky; top:0">
 					<center>
-						<img style="width:100%"  src="static/header.svg">
+						<img alt="Header" style="width:100%"  src="static/header.svg">
 					</center>
 				</div>
 			</a>
-			<div class="msgsContainer scroll">
-				<ul id="messages">
+			<div id="maincontent" class="msgsContainer scroll">
+				<label for="usrMessageInput">⠀</label>
+				<div class="fake_ul" id="messages">
 					<div class="botMessage">
 						👋 ¡Hola! Soy Perry, un Asistente Virtual<!-- desarrollado por alumnos de 3er. año de  <a class="aLight" href="https://campus.belgrano.ort.edu.ar/tic">TIC ORT</a>-->.
 					</div>
@@ -45,7 +50,7 @@
 						Podes consultarme sobre el <b>actual brote de coronavirus<b> 🦠
 					</div>
 					<div class="divider"></div>
-				</ul>
+				</div>
 			</div>
 			<input id="usrMessageInput" class="msgInput" name="msg" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" inputmode="search"/>
 			<button onclick="send()" class="sendBtn"> Enviar </button>
@@ -55,18 +60,38 @@
 			<div class"logos">
 			<center>
 				<a href="https://www.ort.edu.ar">
-					<img class="logo" src="static/ORT.svg" alt="TIC X">
+					<img alt="ORT icon" class="logo" src="static/ORT.svg" alt="TIC X">
 				</a>
 				<a href="https://campus.belgrano.ort.edu.ar/tic/ticlab">
-					<img class="logo" src="static/TIC_LAB_azul.svg" alt="TIC X">
+					<img alt="TIC x icon blue" class="logo" src="static/TIC_LAB_azul.svg" alt="TIC X">
 				</a>
 				<a href="https://campus.belgrano.ort.edu.ar/tic">
-					<img class="logo" src="static/TIC_X.svg" alt="TIC X">
+					<img alt="TIC x icon"  class="logo" src="static/TIC_X.svg" alt="TIC X">
 				</a>
 			</center>
 			</div>
 			<br><br><br><br>
 		</div>
 		<script type="text/javascript" src="/static/chatbot.js?REPLACE"></script>
+		<script>
+			if ('serviceWorker' in navigator){
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+		</script>
+		<style>
+			.skip-link {
+				position: absolute;
+				top: -40px;
+				left: 0;
+				background: #000000;
+				color: white;
+				padding: 8px;
+				z-index: 100;
+			}
+
+			.skip-link:focus {
+				top: 0;
+			}
+		</style>
 	</body>
 </html>

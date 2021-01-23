@@ -12,6 +12,9 @@ gevent = "^20.6.2"
 bs4 = "^0.0.1"
 twilio = "^6.44.0"
 flask-mobility = "^1.0.0"
+psutil = "^5.8.0"
+flask-sslify = "^0.1.5"
+flask-talisman = "^0.7.0"
 
 [tool.poetry.dev-dependencies]
 

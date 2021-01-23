@@ -7456,3 +7456,267 @@ INFO:root:Out: El numero de infectados en Argentina es de 555.524.|97864b99-0a11
 INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
 INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f766e59b-8cab-4222-a5c0-ce63c718bba3'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
 INFO:root:Out: El numero de infectados en Argentina es de 555.524.|f766e59b-8cab-4222-a5c0-ce63c718bba3
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Brasil|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9848469257354737}], 'entities': [{'entity': 'pais', 'location': [26, 32], 'value': 'brazil', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '7cdd6369-facb-4101-869d-682ba523d173'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Brazil es de 4.382.263.|7cdd6369-facb-4101-869d-682ba523d173
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Brasil|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9848469257354737}], 'entities': [{'entity': 'pais', 'location': [26, 32], 'value': 'brazil', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '4c2d2835-15e7-4fa9-8f4e-2c8937214666'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Brazil es de 4.382.263.|4c2d2835-15e7-4fa9-8f4e-2c8937214666
+INFO:root:Incoming-SIRI: Cuantos infectados hay en brasil|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9848469257354737}], 'entities': [{'entity': 'pais', 'location': [26, 32], 'value': 'brazil', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '6da14a27-5805-41ac-8d90-e3f162a4db77'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Brazil es de 4.382.263.|6da14a27-5805-41ac-8d90-e3f162a4db77
+INFO:root:Incoming-SIRI: Cuantos infectados hay en brasil|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9848469257354737}], 'entities': [{'entity': 'pais', 'location': [26, 32], 'value': 'brazil', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8fdd72b1-1242-44a7-a194-5d5f20e634f9'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Brazil es de 4.382.263.|8fdd72b1-1242-44a7-a194-5d5f20e634f9
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Brasil|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9848469257354737}], 'entities': [{'entity': 'pais', 'location': [26, 32], 'value': 'brazil', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '64ea0d66-c6a6-4786-afe1-7ba7d73b53b9'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Brazil es de 4.382.263.|64ea0d66-c6a6-4786-afe1-7ba7d73b53b9
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Brasil|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9848469257354737}], 'entities': [{'entity': 'pais', 'location': [26, 32], 'value': 'brazil', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '003e1aff-7cf7-4e40-a712-1553dafa29e8'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Brazil es de 4.382.263.|003e1aff-7cf7-4e40-a712-1553dafa29e8
+INFO:root:Incoming: Cuantos infectados hay en eeuu|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9867284297943115}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'da79d3dc-495a-41e1-a2d2-e09568660799'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|da79d3dc-495a-41e1-a2d2-e09568660799
+INFO:root:Incoming: Cuantos infectados hay en usa|da79d3dc-495a-41e1-a2d2-e09568660799
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9840301513671876}], 'entities': [{'entity': 'pais', 'location': [26, 29], 'value': 'united-states', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'da79d3dc-495a-41e1-a2d2-e09568660799'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en United States es de 6.686.203.|da79d3dc-495a-41e1-a2d2-e09568660799
+INFO:root:Incoming-SIRI: Cuántos casos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.999559497833252}], 'entities': [{'entity': 'pais', 'location': [32, 41], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'ee6c2dbe-df9a-4de0-986c-1d699a342845'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|ee6c2dbe-df9a-4de0-986c-1d699a342845
+INFO:root:Incoming-SIRI: Cuántos casos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.999559497833252}], 'entities': [{'entity': 'pais', 'location': [32, 41], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '6322489b-d283-442a-83b9-09d7a91b8404'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|6322489b-d283-442a-83b9-09d7a91b8404
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '82129473-7e3f-485e-af8d-c0f49cda55cb'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|82129473-7e3f-485e-af8d-c0f49cda55cb
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8a4b7430-a1a4-4955-a122-d6bc48253839'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|8a4b7430-a1a4-4955-a122-d6bc48253839
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'bcbaa6aa-7de6-4572-b67e-97a018324e32'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|bcbaa6aa-7de6-4572-b67e-97a018324e32
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8296869e-f4af-42c2-9862-7fb78fd62107'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|8296869e-f4af-42c2-9862-7fb78fd62107
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'ce4811d4-ac17-45da-869a-cacf09578175'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|ce4811d4-ac17-45da-869a-cacf09578175
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '456400a6-9c3e-4a1b-ade3-4363ff70d5f5'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|456400a6-9c3e-4a1b-ade3-4363ff70d5f5
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'ccc31ed5-e1e3-43c6-b55f-4e9bb8008b4e'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|ccc31ed5-e1e3-43c6-b55f-4e9bb8008b4e
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '86f0e87f-c85d-4d9d-ad26-35e3d9c96650'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|86f0e87f-c85d-4d9d-ad26-35e3d9c96650
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '5d43cfab-3239-44a6-aa1f-265b67355193'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|5d43cfab-3239-44a6-aa1f-265b67355193
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '75f5edde-7156-4e65-8b53-694fd46225fe'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|75f5edde-7156-4e65-8b53-694fd46225fe
+INFO:root:Incoming-SIRI: Cuantos infectados hay en argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '65d27ac3-f590-4ddf-869b-4707f201ccb6'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|65d27ac3-f590-4ddf-869b-4707f201ccb6
+INFO:root:Incoming-SIRI: Cuantos infectados hay en argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '10e7baf3-d2e2-4248-a9ac-6570fb6873a0'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|10e7baf3-d2e2-4248-a9ac-6570fb6873a0
+INFO:root:Incoming-SIRI: Cuantos infectados hay en argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f2d772b4-6745-42bf-ae72-f40627a65458'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|f2d772b4-6745-42bf-ae72-f40627a65458
+INFO:root:Incoming-SIRI: Cuantos infectados hay en argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '3b6809c0-137e-4478-a434-ab3d1e30c1f6'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|3b6809c0-137e-4478-a434-ab3d1e30c1f6
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'e7a222d1-2446-4ad5-98f6-5126e7b2edc9'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|e7a222d1-2446-4ad5-98f6-5126e7b2edc9
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '940084bd-bd53-410e-852f-67bd484942c6'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 565.433.|940084bd-bd53-410e-852f-67bd484942c6
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '040f57eb-6145-40e9-9aa6-76b42c750b7e'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|040f57eb-6145-40e9-9aa6-76b42c750b7e
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '984194be-39f9-4191-a941-f8c57d7813e7'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|984194be-39f9-4191-a941-f8c57d7813e7
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '66835981-0b18-4c10-b20d-b6d9b2ec4870'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|66835981-0b18-4c10-b20d-b6d9b2ec4870
+INFO:root:Incoming-SIRI: Infectados|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '9e83b39d-9be4-4bfe-82f5-83fdcb1017c8'}, 'skills': {'main skill': {'user_defined': {'globales': None, 'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados a nivel global es 29.425.572.|9e83b39d-9be4-4bfe-82f5-83fdcb1017c8
+INFO:root:Incoming-SIRI: Infectado|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.7309731006622315}], 'entities': [], 'generic': [{'response_type': 'suggestion', 'title': 'Querías decir:', 'suggestions': [{'label': 'Casos_Globales', 'value': {'input': {'suggestion_id': 'd:8b8241e1-3334-4ba8-86bf-eb264c40aec1', 'text': 'Infectado', 'intents': [{'intent': 'infectados', 'confidence': 0.7309731006622315}], 'entities': []}}, 'output': {'generic': [{'response_type': 'text', 'text': 'API'}]}, 'source_dialog_node': 'root', 'dialog_node': 'node_7_1595135639942', 'internal': {'propensity': 0.9975768252684706}}, {'label': 'Sintomas', 'value': {'input': {'suggestion_id': 'd:21201a18-b6f8-417d-9ffd-7c2ab0912553', 'text': 'Infectado', 'intents': [{'intent': 'Sintomas_COVID', 'confidence': 0.5618129968643188}], 'entities': []}}, 'output': {'generic': [{'response_type': 'text', 'text': 'Los <b>síntomas más comunes del coronavirus </b>son: <br>⚪ Fiebre 🤒<br>⚪ Cansancio 😴<br>⚪ Tos seca😩<br>⚪ Pérdida del gusto y olfato👅👃\nAlgunos pacientes también pueden tener dolores, congestión, dolor de garganta, goteo nasal  y diarrea.\nEn los <b>casos más graves</b>, puede causar: neumonía, síndrome respiratorio agudo, insuficiencia renal e incluso la muerte.'}]}, 'source_dialog_node': 'root', 'dialog_node': 'node_2_1595146356221', 'internal': {'propensity': 0.9776411113443396}}, {'label': 'Despedida', 'value': {'input': {'suggestion_id': 'd:a5947493-04fe-42b9-b700-fdadc02fef98', 'text': 'Infectado', 'intents': [{'intent': 'despedida', 'confidence': 0.25057075023651126}], 'entities': []}}, 'output': {'generic': [{'response_type': 'text', 'text': 'https://pa1.narvii.com/7537/f88ea153ecbd2bbd7038439582d2c8e3f449eeecr1-480-270_hq.gif'}]}, 'source_dialog_node': 'root', 'dialog_node': 'node_10_1595146126555', 'internal': {'propensity': 0.2372884815840722}}, {'label': 'Ninguna de las anteriores', 'value': {'input': {'suggestion_id': 'd:fa168274-ca6e-4b78-ba40-394a14a6aab8', 'text': 'Infectado', 'intents': [], 'entities': []}}, 'output': {'generic': []}, 'source_dialog_node': 'root', 'internal': {'propensity': 1}}]}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '0d436115-0635-406b-a3f8-de5fe05cc734'}, 'skills': {'main skill': {'system': {}}}}}
+WARNING:root:Error: 'text'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|0d436115-0635-406b-a3f8-de5fe05cc734
+INFO:root:Incoming-SIRI: Infectado|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.7309731006622315}], 'entities': [], 'generic': [{'response_type': 'suggestion', 'title': 'Querías decir:', 'suggestions': [{'label': 'Sintomas', 'value': {'input': {'suggestion_id': 'd:38d7f08b-f42c-40eb-89c0-82998766bc28', 'text': 'Infectado', 'intents': [{'intent': 'Sintomas_COVID', 'confidence': 0.5618129968643188}], 'entities': []}}, 'output': {'generic': [{'response_type': 'text', 'text': 'Los <b>síntomas más comunes del coronavirus </b>son: <br>⚪ Fiebre 🤒<br>⚪ Cansancio 😴<br>⚪ Tos seca😩<br>⚪ Pérdida del gusto y olfato👅👃\nAlgunos pacientes también pueden tener dolores, congestión, dolor de garganta, goteo nasal  y diarrea.\nEn los <b>casos más graves</b>, puede causar: neumonía, síndrome respiratorio agudo, insuficiencia renal e incluso la muerte.'}]}, 'source_dialog_node': 'root', 'dialog_node': 'node_2_1595146356221', 'internal': {'propensity': 0.9776411113443396}}, {'label': 'Casos_Globales', 'value': {'input': {'suggestion_id': 'd:933ec2f4-79c4-4692-9543-ee0578a2627e', 'text': 'Infectado', 'intents': [{'intent': 'infectados', 'confidence': 0.7309731006622315}], 'entities': []}}, 'output': {'generic': [{'response_type': 'text', 'text': 'API'}]}, 'source_dialog_node': 'root', 'dialog_node': 'node_7_1595135639942', 'internal': {'propensity': 0.9975768252684706}}, {'label': 'Ninguna de las anteriores', 'value': {'input': {'suggestion_id': 'd:5d71bab2-840c-4460-a6e2-843dcf09568f', 'text': 'Infectado', 'intents': [], 'entities': []}}, 'output': {'generic': []}, 'source_dialog_node': 'root', 'internal': {'propensity': 1}}]}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '677f8511-591c-4fa3-bd2b-d1acfb216f05'}, 'skills': {'main skill': {'system': {}}}}}
+WARNING:root:Error: 'text'
+INFO:root:Out: Lo sentimos hubo un error al procesar tu mensaje, intenta refrasearlo.|677f8511-591c-4fa3-bd2b-d1acfb216f05
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|677f8511-591c-4fa3-bd2b-d1acfb216f05
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '677f8511-591c-4fa3-bd2b-d1acfb216f05'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|677f8511-591c-4fa3-bd2b-d1acfb216f05
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|677f8511-591c-4fa3-bd2b-d1acfb216f05
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': '677f8511-591c-4fa3-bd2b-d1acfb216f05'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|677f8511-591c-4fa3-bd2b-d1acfb216f05
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '49afd097-851d-4146-aa07-5322a74ec21f'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|49afd097-851d-4146-aa07-5322a74ec21f
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '2ec46a48-a1d5-40b4-b6a7-8e5c9ba1acad'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|2ec46a48-a1d5-40b4-b6a7-8e5c9ba1acad
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '4b8693a8-4d0f-497c-9b81-8c481071d688'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|4b8693a8-4d0f-497c-9b81-8c481071d688
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '485b4bc3-7d5d-4eb2-ada6-db5f8a1d986e'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|485b4bc3-7d5d-4eb2-ada6-db5f8a1d986e
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c5df2374-8e53-4efd-bd17-75b9605e5e2b'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|c5df2374-8e53-4efd-bd17-75b9605e5e2b
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '2fc2ea5f-b0e3-4b54-b17a-58a6ab9164dc'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|2fc2ea5f-b0e3-4b54-b17a-58a6ab9164dc
+INFO:root:Incoming-SIRI: Quién sos|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Me llamo Perry y soy un asistente virtual diseñado para ayudarte. Podes preguntarme tus dudas, por ejemplo: <br> <b>▪ Síntomas 🌡️</b> <br> <b>▪ Nº de contagiados</b><br><b>▪ Teléfonos de emergencia ☎️</b><br><b>▪ Cómo protegerte✋💦🧼😷</b>'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c9445b95-88dd-44ca-9902-a14c31c25494'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Me llamo Perry y soy un asistente virtual diseñado para ayudarte. Podes preguntarme tus dudas, por ejemplo:  ▪ Síntomas 🌡️  ▪ Nº de contagiados▪ Teléfonos de emergencia ☎️▪ Cómo protegerte✋💦🧼😷|c9445b95-88dd-44ca-9902-a14c31c25494
+INFO:root:Incoming-SIRI: Quién sos|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Quien_Sos', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Me llamo Perry y soy un asistente virtual diseñado para ayudarte. Podes preguntarme tus dudas, por ejemplo: <br> <b>▪ Síntomas 🌡️</b> <br> <b>▪ Nº de contagiados</b><br><b>▪ Teléfonos de emergencia ☎️</b><br><b>▪ Cómo protegerte✋💦🧼😷</b>'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '1e92db60-6368-44f8-bc99-015ba67c94ec'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Me llamo Perry y soy un asistente virtual diseñado para ayudarte. Podes preguntarme tus dudas, por ejemplo:  ▪ Síntomas 🌡️  ▪ Nº de contagiados▪ Teléfonos de emergencia ☎️▪ Cómo protegerte✋💦🧼😷|1e92db60-6368-44f8-bc99-015ba67c94ec
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'e62265c7-9cd2-4b41-bfb6-89f778bc802a'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|e62265c7-9cd2-4b41-bfb6-89f778bc802a
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '8e017832-10bf-4e14-b55a-75806a370606'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|8e017832-10bf-4e14-b55a-75806a370606
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '28511059-4434-4ec2-b785-7e43d006a7bc'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|28511059-4434-4ec2-b785-7e43d006a7bc
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c1e3d12b-f9b8-4b8c-84fb-8f04de1806e0'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|c1e3d12b-f9b8-4b8c-84fb-8f04de1806e0
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '059c53c5-7a65-4dba-b031-69ce2057cf68'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|059c53c5-7a65-4dba-b031-69ce2057cf68
+INFO:root:Incoming-SIRI: Cuantos infectados hay en Argentina|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '344c9c2f-24ae-471f-88bc-52dc2076b67a'}, 'skills': {'main skill': {'user_defined': {'intencion': 'infectados'}, 'system': {}}}}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.|344c9c2f-24ae-471f-88bc-52dc2076b67a
+INFO:root:Incoming: Cuantos infectados hay en Argentina
+INFO:root:Watson: {'output': {'intents': [{'intent': 'infectados', 'confidence': 0.9825809001922607}], 'entities': [{'entity': 'pais', 'location': [26, 35], 'value': 'argentina', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'API'}]}}
+INFO:root:Out: El numero de infectados en Argentina es de 577.325.
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'eb315bc0-9b42-465c-9024-ff924929f461'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Incoming: Ya existe una vacuna?|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Cura_COVID', 'confidence': 0.9072871208190918}], 'entities': [{'entity': 'vacuna', 'location': [14, 20], 'value': 'vacuna', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Aún no existe una <strong>vacuna💉 para prevenir la COVID-19</strong>, pero ya son muchos los laboratorios de todo el mundo que han comenzado una carrera para desarrollarla lo antes posible🧫🧑\u200d🔬\nEn la mayoría de los casos ya tienen un prototipo, que está en fase de experimentación animal, y se prevé que comiencen en breve con los ensayos clínicos. \nLa creación de una nueva vacuna tiene <strong>dos etapas</strong>: \n1️⃣ Construir la vacuna en el laboratorio🔬, que puede tardar 3-4 meses;<br>2️⃣ Evaluar su eficacia, que puede llega a durar un año.\nEsta última etapa se realiza primero en animales de laboratorio,y luego se pasa a la fase de ensayos clínicos, que se hace en personas. '}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'eb315bc0-9b42-465c-9024-ff924929f461'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Aún no existe una <strong>vacuna💉 para prevenir la COVID-19</strong>, pero ya son muchos los laboratorios de todo el mundo que han comenzado una carrera para desarrollarla lo antes posible🧫🧑‍🔬
+En la mayoría de los casos ya tienen un prototipo, que está en fase de experimentación animal, y se prevé que comiencen en breve con los ensayos clínicos. 
+La creación de una nueva vacuna tiene <strong>dos etapas</strong>: 
+1️⃣ Construir la vacuna en el laboratorio🔬, que puede tardar 3-4 meses;<br>2️⃣ Evaluar su eficacia, que puede llega a durar un año.
+Esta última etapa se realiza primero en animales de laboratorio,y luego se pasa a la fase de ensayos clínicos, que se hace en personas. |eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Incoming: Si ya tuve COVID puedo tenerlo de nuevo?|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Watson: {'output': {'intents': [{'intent': 'Contacto_COVID', 'confidence': 0.4299829721450806}], 'entities': [{'entity': 'covid', 'location': [11, 16], 'value': 'covid19', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Por favor, indique en qué provincia se encuentra'}]}, 'context': {'global': {'system': {'turn_count': 3}, 'session_id': 'eb315bc0-9b42-465c-9024-ff924929f461'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: Por favor, indique en qué provincia se encuentra|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Incoming: Capital federal|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Watson: {'output': {'intents': [], 'entities': [{'entity': 'provincia', 'location': [0, 15], 'value': 'Buenos-Aires-Autonomous-City', 'confidence': 1}], 'generic': [{'response_type': 'text', 'text': 'Contacto'}, {'response_type': 'text', 'text': 'Contacto'}]}, 'context': {'global': {'system': {'turn_count': 4}, 'session_id': 'eb315bc0-9b42-465c-9024-ff924929f461'}, 'skills': {'main skill': {'user_defined': {'provincia': 'Capital federal'}, 'system': {}}}}}
+INFO:root:Out: <b>Ministerio de Salud</b><br><a class="aLight" href="tel:120">Llamá al: 120</a><br> Ciudad Autónoma de Buenos Aire<br><a class="aLight" href="tel:148"> Llamá al: 148</a>|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Incoming: Puedo contagiarme 2 veces ?|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Watson: {'output': {'intents': [{'intent': 'prevencion_contagio', 'confidence': 0.6225809097290039}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'Disculpa pero... 🤔 ¿Me lo podes repetir con otras palabras?'}]}, 'context': {'global': {'system': {'turn_count': 5}, 'session_id': 'eb315bc0-9b42-465c-9024-ff924929f461'}, 'skills': {'main skill': {'user_defined': {'provincia': 'Capital federal'}, 'system': {}}}}}
+INFO:root:Out: Disculpa pero... 🤔 ¿Me lo podes repetir con otras palabras?|eb315bc0-9b42-465c-9024-ff924929f461
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'fa0310b6-fcbc-485e-a4f7-929cffc9f4ed'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|fa0310b6-fcbc-485e-a4f7-929cffc9f4ed
+INFO:root:Incoming: hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '39b64487-87f2-42f9-b666-5e374441ed9a'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|39b64487-87f2-42f9-b666-5e374441ed9a
+INFO:root:Incoming: Como estas?|39b64487-87f2-42f9-b666-5e374441ed9a
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Greetings', 'confidence': 0.8634056091308595}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¿Puede expresarse con otras palabras? No le he entendido 😔'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': '39b64487-87f2-42f9-b666-5e374441ed9a'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¿Puede expresarse con otras palabras? No le he entendido 😔|39b64487-87f2-42f9-b666-5e374441ed9a
+ERROR:main:Exception on /stats [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 81, in stats
+    return html_stats(request)
+  File "/home/runner/Perry/usage.py", line 30, in html_stats
+    s = codecs.open('web/stats_header.html', 'r', 'utf-8').read()
+  File "/usr/lib/python3.8/codecs.py", line 905, in open
+    file = builtins.open(filename, mode, buffering)
+FileNotFoundError: [Errno 2] No such file or directory: 'web/stats_header.html'
+ERROR:main:Exception on /stats [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 81, in stats
+    return html_stats(request)
+  File "/home/runner/Perry/usage.py", line 30, in html_stats
+    s = codecs.open('web/stats_header.html', 'r', 'utf-8').read()
+  File "/usr/lib/python3.8/codecs.py", line 905, in open
+    file = builtins.open(filename, mode, buffering)
+FileNotFoundError: [Errno 2] No such file or directory: 'web/stats_header.html'
+ERROR:main:Exception on /stats [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 81, in stats
+    return html_stats(request.MOBILE)
+  File "/home/runner/Perry/usage.py", line 30, in html_stats
+    s = codecs.open('web/stats_header.html', 'r', 'utf-8').read()
+  File "/usr/lib/python3.8/codecs.py", line 905, in open
+    file = builtins.open(filename, mode, buffering)
+FileNotFoundError: [Errno 2] No such file or directory: 'web/stats_header.html'
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '352651fa-2489-4bb4-ba78-298450c9d613'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|352651fa-2489-4bb4-ba78-298450c9d613
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '82dc158a-291a-4cf2-ba1f-1951ea35cef1'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|82dc158a-291a-4cf2-ba1f-1951ea35cef1
+INFO:root:Incoming: hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': '30bdaa68-f1f6-4673-93b3-0bca13e8a272'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|30bdaa68-f1f6-4673-93b3-0bca13e8a272
+INFO:root:Incoming: hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'd2e2c8ff-c0de-4abd-98f6-2a5566e54d02'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola, soy Perry! Soy una asistente virtual especializada en el actual brote de coronavirus.🤗. Funciono mejor si me haces <b>preguntas concretas y evitas los párrafos largos</b>.|d2e2c8ff-c0de-4abd-98f6-2a5566e54d02
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'b557e604-f4e5-4069-8133-8933054a37e4'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|b557e604-f4e5-4069-8133-8933054a37e4
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'f2bf35b0-b564-4d59-a23c-297d3f57822f'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|f2bf35b0-b564-4d59-a23c-297d3f57822f
+INFO:root:Incoming: Hola|
+INFO:root:Watson: {'output': {'intents': [{'intent': 'saludo', 'confidence': 1}], 'entities': [], 'generic': [{'response_type': 'text', 'text': '¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗'}]}, 'context': {'global': {'system': {'turn_count': 1}, 'session_id': 'c9a8a901-5245-44c6-a77d-ef0f7c59781c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: ¡Hola! Mi nombre es Perry y estoy acá para informarte sobre el coronavirus. Gracias por tus preguntas. Hacen que mejore 🤗|c9a8a901-5245-44c6-a77d-ef0f7c59781c
+INFO:root:Incoming: Como estas?|c9a8a901-5245-44c6-a77d-ef0f7c59781c
+INFO:root:Watson: {'output': {'intents': [{'intent': 'General_Greetings', 'confidence': 0.8634056091308595}], 'entities': [], 'generic': [{'response_type': 'text', 'text': 'No le he entendido. Intente reformular la consulta, por favor ☺️'}]}, 'context': {'global': {'system': {'turn_count': 2}, 'session_id': 'c9a8a901-5245-44c6-a77d-ef0f7c59781c'}, 'skills': {'main skill': {'system': {}}}}}
+INFO:root:Out: No le he entendido. Intente reformular la consulta, por favor ☺️|c9a8a901-5245-44c6-a77d-ef0f7c59781c
