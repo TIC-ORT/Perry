@@ -8,6 +8,7 @@ workbox.routing.registerRoute(
 
 console.log('Service Worker');*/
 
+
 // cache name
 workbox.core.setCacheNameDetails({
     prefix: 'perry-cache',
@@ -16,6 +17,14 @@ workbox.core.setCacheNameDetails({
   });
   
 // runtime cache
+
+workbox.routing.registerRoute(
+    new RegExp('/static/.*'),
+    new workbox.strategies.CacheFirst({
+			cacheName: 'perry-cache-Static'
+		})
+);
+
 // 1. stylesheet
 workbox.routing.registerRoute(
     new RegExp('\.css$'),
@@ -30,5 +39,10 @@ workbox.routing.registerRoute(
         cacheName: 'perry-cache-Images'
     })
 );
+workbox.routing.registerRoute(
+    new RegExp('/.*'),
+    new workbox.strategies.CacheFirst()
+);
+
 
 workbox.precaching.precacheAndRoute([]);

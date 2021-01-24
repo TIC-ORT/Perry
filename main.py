@@ -38,7 +38,7 @@ def run():
 
 #Force cache reload on client
 def cacheWorkaround(file):
-    return file.read().replace('REPLACE', date)
+    return file.read().replace('REPLACE', '')#date)
 
 
 #Open html files
