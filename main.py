@@ -84,6 +84,7 @@ def stats():
 
 @app.route('/info')
 def info():
+    logging.info('main: ' + str(request.user_agent))
     #Info endpoint corresponds to info.html website on mobile, full website on desktop
     if request.MOBILE:
         file = loadPage("info.html")
@@ -100,6 +101,7 @@ def info():
 
 @app.route('/demo')
 def demo():
+    logging.info('main: ' + str(request.user_agent))
     #Demo endpoint points to index.html website
     file = loadPage("index.html")
 
@@ -147,6 +149,7 @@ def web():
     if '\n' in msg:
         msg = msg.replace('\n', '')
     logging.info('Incoming: ' + msg)
+    logging.info('From: ' + str(request.user_agent))
     session_id = ''
     try:
         #sends input to watson for message analize
@@ -180,6 +183,7 @@ def siri():
     if '\n' in msg:
         msg = msg.replace('\n', '')
     logging.info('Incoming-SIRI: ' + msg)
+    logging.info('From: ' + str(request.user_agent))
     session_id = ''
     try:
         #sends input to watson for message analize

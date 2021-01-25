@@ -46,12 +46,13 @@ class Globales:
 		for tr in noise:
 			tr.decompose()
 
-		table = soup.find("table", class_="wikitable")
+		#table = soup.find("table", class_="wikitable")
+		table = soup.find("table", id="thetable")
 
 		rows = table.find_all('tr')
 
 		cases, deaths, recov = [title.text.replace('\n', '').replace(',', '.') for title in rows[1].find_all('th')[1:6]][1:4]
-		active = int(cases.replace('.', '')) - (int(deaths.replace('.', ''))+int(recov.replace('.', '')))
+		active = int(cases.replace('.', '').replace('+', '')) - (int(deaths.replace('.', '').replace('+', ''))+int(recov.replace('.', '').replace('+', '')))
 
 		self.results['world'] = 	{
 								'infectados':cases,
@@ -85,9 +86,13 @@ class Globales:
 			if not done:
 				done = False
 				cases, deaths, recov = res
-				active = int(cases.replace('.', '')) - (int(deaths.replace('.', ''))+int(recov.replace('.', '')))
-				if active > 999:
-					active = '{:,}'.format(active).replace(',', '.')
+				try:
+					active = int(cases.replace('.', '').replace('+', '')) - (int(deaths.replace('.', '').replace('+', ''))+int(recov.replace('.', '').replace('+', '')))
+				except:
+					active = "-"
+				if active != "-":
+					if active > 999:
+						active = '{:,}'.format(active).replace(',', '.')
 				self.results[country] = 	{
 										'infectados':cases,
 										'fallecidos':deaths,
@@ -158,9 +163,9 @@ def pais(info, pais, fecha=None):
 			data.results = pickle.load(open("globales.p", "rb"))['data']
 		else:
 			data.load()
+			pickle.dump({'data': data.results, 'date': date}, open("globales.p", "wb"))
 		pais = difflib.get_close_matches(pais, data.getCountryKeys(),1)[0]
 		number = data.getCountryInfo(pais, info)
-		pickle.dump({'data': data.results, 'date': date}, open("globales.p", "wb"))
 		#pais = traduccion[pais]
 		return 'El numero de ' + info + ' en '+ pais + ' es de '+ number + '.'
 	"""
