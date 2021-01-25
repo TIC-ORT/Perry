@@ -6,4 +6,4 @@ Hosted @ repl.co
 Powered by:
 - Open mAPI
 - IBM Watson
-- Twilio Whatsapp
+- Twilio
