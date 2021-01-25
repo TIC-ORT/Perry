@@ -65,6 +65,7 @@ requestsLog.disabled = True
 
 @app.route('/')
 def main():
+    #print(request.user_agent)
     #Main endpoint corresponds to index.html website on mobile, full website on desktop
     if request.MOBILE:
         file = loadPage("index.html")
@@ -122,6 +123,13 @@ def service_worker():
         os.path.join(app.root_path, 'static'),
         'service-worker.js',
         mimetype='application/javascript')
+
+@app.route('/.well-known/assetlinks.json')
+def assetlinks():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'assetlinks.json',
+        mimetype='application/json')
 
 
 def removeHTML(response):

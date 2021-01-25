@@ -17,8 +17,22 @@
 			"purpose": "maskable any"
 		}
 	],
-	"theme_color": "#0c043f",
-	"background_color": "#0C043F",
+	"screenshots" : [
+		{
+			"src": "screenshot1.webp",
+			"sizes": "1280x720",
+			"type": "image/webp"
+		},
+		{
+			"src": "screenshot2.webp",
+			"sizes": "1280x720",
+			"type": "image/webp"
+		}
+	],
+	"theme_color": "#896EBE",
+	"background_color": "#896EBE",
 	"display": "fullscreen",
-	"orientation": "portrait"
+	"orientation": "portrait",
+	"categories": ["health", "education", "ai", "chatbot", "news"],
+	"prefer_related_applications": false
 }

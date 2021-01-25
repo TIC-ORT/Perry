@@ -28,8 +28,14 @@ workbox.routing.registerRoute(
 // 1. stylesheet
 workbox.routing.registerRoute(
     new RegExp('\.css$'),
-    new workbox.strategies.CacheFirst({
+    new workbox.strategies.NetworkFirst({
         cacheName: 'perry-cache-Stylesheets'
+    })
+);
+workbox.routing.registerRoute(
+    new RegExp('\.js$'),
+    new workbox.strategies.NetworkFirst({
+        cacheName: 'perry-cache-Scripts'
     })
 );
 // 2. images

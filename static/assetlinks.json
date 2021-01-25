@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "co.repl.ticlab.perry.twa",
+                   "sha256_cert_fingerprints": ["2C:6D:88:C9:66:FC:0A:6A:BB:76:B2:E8:F6:61:11:3E:75:F0:91:E4:BD:D7:E4:9D:73:E6:46:D4:F3:26:C9:E4"] }
+    }]
