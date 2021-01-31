@@ -1,7 +1,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.env
 .env
-history.log
 poetry.lock
 pyproject.toml
+history.log
+*.p
+.p
