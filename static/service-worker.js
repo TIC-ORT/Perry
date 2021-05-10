@@ -16,14 +16,14 @@ workbox.core.setCacheNameDetails({
     runtime: 'runtime',
   });
   
-// runtime cache
+/* runtime cache
 
 workbox.routing.registerRoute(
     new RegExp('/static/.*'),
     new workbox.strategies.CacheFirst({
 			cacheName: 'perry-cache-Static'
 		})
-);
+);*/
 
 // 1. stylesheet
 workbox.routing.registerRoute(
