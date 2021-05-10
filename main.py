@@ -5,12 +5,13 @@ from flask import Flask, request, send_from_directory, redirect, Response
 from flask_mobility import Mobility
 from flask_talisman import Talisman
 import os
-from usage import *
+
+from perry_libs.usage import *
 
 #Apis used
-from assistant import sendToAssistant
-from whatsapp import sendToNum
-from new_apis import interpret_watson_response
+from perry_libs.assistant import sendToAssistant
+from perry_libs.whatsapp import sendToNum
+from perry_libs.new_apis import interpret_watson_response
 
 #File management
 from bs4 import BeautifulSoup
@@ -22,7 +23,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #Logging configuration set to debug on history.log file
-logging.basicConfig(filename='history.log', level=logging.DEBUG)
+logging.basicConfig(filename='misc/history.log', level=logging.DEBUG)
 logging.basicConfig(
     format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 

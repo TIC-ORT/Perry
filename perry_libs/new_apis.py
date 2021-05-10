@@ -2,8 +2,8 @@ from random import choice
 import requests
 #from countries import natural
 #from contacto import mensaje_contacto
-from resources import natural, mensaje_contacto, traduccion
-from Provincia import API_Provincia
+from perry_libs.resources import natural, mensaje_contacto, traduccion
+from perry_libs.Provincia import API_Provincia
 import difflib
 from bs4 import BeautifulSoup
 import pickle
@@ -159,11 +159,11 @@ def pais(info, pais, fecha=None):
 	else:
 		date = datetime.today().strftime('%Y-%m-%d')
 		data = Globales()
-		if pickle.load(open("globales.p", "rb"))['date'] == date:
-			data.results = pickle.load(open("globales.p", "rb"))['data']
+		if pickle.load(open("misc/globales.p", "rb"))['date'] == date:
+			data.results = pickle.load(open("misc/globales.p", "rb"))['data']
 		else:
 			data.load()
-			pickle.dump({'data': data.results, 'date': date}, open("globales.p", "wb"))
+			pickle.dump({'data': data.results, 'date': date}, open("misc/globales.p", "wb"))
 		pais = difflib.get_close_matches(pais, data.getCountryKeys(),1)[0]
 		number = data.getCountryInfo(pais, info)
 		#pais = traduccion[pais]
