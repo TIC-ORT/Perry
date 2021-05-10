@@ -145,8 +145,7 @@ li{
 }
 .aLight{
 	color: #f2674a;
-	//font-weight: 900;
-
+	/*font-weight: 900;*/
 }
 .aLight:visited {
 	color: #f2674a;

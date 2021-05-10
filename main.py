@@ -43,7 +43,7 @@ def cacheWorkaround(file):
 
 #Open html files
 def loadPage(src):
-    return codecs.open(src, "r", "utf-8")
+    return codecs.open("web/"+src, "r", "utf-8")
 
 
 #Designated thread for server proccess
@@ -55,7 +55,7 @@ def keep_alive():
 #Flask app
 app = Flask(__name__)
 Mobility(app)
-Talisman(app, content_security_policy=None)
+#Talisman(app, content_security_policy=None)
 
 #Disable unneeded dependencies logging
 werkzeugLog = logging.getLogger('werkzeug')
