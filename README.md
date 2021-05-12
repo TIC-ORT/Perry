@@ -14,6 +14,7 @@ To-do:
 
 Powered by:
 - [Open mAPI](https://github.com/Creativity-Hub/Open-mAPI)
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 - [IBM Watson](https://www.ibm.com/ar-es/cloud/ai)
 - [Twilio](http://twilio.com)
 - [TIC ORT](http://campus.belgrano.ort.edu.ar/tic)
