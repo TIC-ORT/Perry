@@ -3,7 +3,9 @@
 
 💬 Habla con [Perry](https://perry.ticlab.repl.co/demo)
 
-🌐 Hosted @ [replit](replit.com)
+🌐 Hosted   @ [replit](https://www.replit.com)
+
+✏️ Designed @ [Figma](https://www.figma.com)
 
 To-do:
 - Nro Vacunas
