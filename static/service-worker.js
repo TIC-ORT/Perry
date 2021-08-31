@@ -45,10 +45,11 @@ workbox.routing.registerRoute(
         cacheName: 'perry-cache-Images'
     })
 );
+/*
 workbox.routing.registerRoute(
     new RegExp('/.*'),
     new workbox.strategies.CacheFirst()
-);
+);*/
 
 
 workbox.precaching.precacheAndRoute([]);

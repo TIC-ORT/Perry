@@ -232,7 +232,7 @@ input {
 		height: 72.5%;
 	}
 	body{
-		/*overflow-x:hidden;*/
+		overflow-y:hidden;
 		background: #0C073E;
 	}
 	.centered{

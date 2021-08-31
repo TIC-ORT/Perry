@@ -1,7 +1,7 @@
 #Server dependencies
 from gevent.pywsgi import WSGIServer
 from threading import Thread
-from flask import Flask, request, send_from_directory, redirect, Response
+from flask import Flask, request, send_from_directory, redirect
 from flask_mobility import Mobility
 from flask_talisman import Talisman
 import os

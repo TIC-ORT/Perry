@@ -52,7 +52,10 @@ class Globales:
 		rows = table.find_all('tr')
 
 		cases, deaths, recov = [title.text.replace('\n', '').replace(',', '.') for title in rows[1].find_all('th')[1:6]][1:4]
-		active = int(cases.replace('.', '').replace('+', '')) - (int(deaths.replace('.', '').replace('+', ''))+int(recov.replace('.', '').replace('+', '')))
+		if cases == "No data" or deaths == "No data" or recov == "No data":
+			active = "No data"
+		else:
+			active = int(cases.replace('.', '').replace('+', '')) - (int(deaths.replace('.', '').replace('+', ''))+int(recov.replace('.', '').replace('+', '')))
 
 		self.results['world'] = 	{
 								'infectados':cases,
